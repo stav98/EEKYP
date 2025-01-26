@@ -28,7 +28,7 @@
 
 Υλικά
 =====
-<H3>Μονάδες αυτόματου ποτίσματος</H3>
+<H3>Μονάδες αυτόματου ποτίσματος (2 τεμάχια)</H3>
 <table>
   <tr>
     <td>Α/Α</td>
@@ -79,6 +79,19 @@
     <td>2</td>
     <td>16</td>
   </tr>
-  
+  <tr>
+    <td>7</td>
+    <td>DC-DC Converter</td>
+    <td>4</td>
+    <td>2</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Liquid Flow Sensor</td>
+    <td>11</td>
+    <td>1</td>
+    <td>11</td>
+  </tr>
 </table>
 
