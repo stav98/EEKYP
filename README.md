@@ -31,9 +31,9 @@
   <tr>
     <td>Α/Α</td>
     <td>Περιγραφή</td>
-    <td>Τιμή μονάδας</td>
+    <td>Τιμή μονάδας (€)</td>
     <td>Ποσότητα</td>
-    <td>Τιμή</td>
+    <td>Τιμή (€)</td>
   </tr>
   <tr>
     <td>1</td>
@@ -42,5 +42,41 @@
     <td>2</td>
     <td>14</td>
   </tr>
+  <tr>
+    <td>2</td>
+    <td>Θερμόμετρο εξ. χώρου DS18B20</td>
+    <td>4</td>
+    <td>2</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Module WiFi ESP8266-01</td>
+    <td>4</td>
+    <td>2</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Servo Motor MG996R</td>
+    <td>7</td>
+    <td>2</td>
+    <td>14</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Πλακέτα Perfboard 12x18</td>
+    <td>4</td>
+    <td>2</td>
+    <td>8</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Κουτί Ηλ/κό αδιάβροχο</td>
+    <td>8</td>
+    <td>2</td>
+    <td>16</td>
+  </tr>
+  
 </table>
 
