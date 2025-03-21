@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://www.yoctopuce.com/EN/article/how-to-measure-wind-part-2 -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="viewport" content="width=680">
+  
+
+<!-- TSECTION #article_details.php#260# name="header"  !-->
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.yoctopuce.com/EN/rss.xml">
+  
+ 
+
+<!-- TSECTION #neutral.php#966#!-->
+ 
+
+<title>How to measure wind? (part 2)</title>
+<link rel="alternate" hreflang="fr" href="https://www.yoctopuce.com/FR/article/how-to-measure-wind-part-2">
+<style>
+BODY{font-family:Arial,sans-serif;font-size:14px;text-align :justify;height:100%}html{min-height:100%;position:relative}HR{border:0;border-top:1px solid #c0c0c0;height:0;background:#c0c0c0}TABLE{font-family:Arial,sans-serif;font-size:14px}TABLE.blogtable{margin-left:auto;margin-right:auto;border-spacing:0;border-collapse:collapse}TABLE.blogtable TH{background-color:#f0f0f0;border :1px solid #808080;padding-left:5px;padding-right:5px}TABLE.blogtable TD{background-color:#fefefe;border :1px solid #808080;padding-left:5px;padding-right:5px}TABLE.blogtable_noborder{margin-left:auto;margin-right:auto;border:none}TABLE.blogtable_noborder TH{background-color:#f0f0f0;padding-left:5px;padding-right:5px}TABLE.blogtable_noborder TD{background-color:#fefefe;padding-left:5px;padding-right:5px}a:link{color:#666;text-decoration:none}.links{background-color :#669B67;width :100%}a:visited{color:#666;text-decoration:none}a:hover{color:#000;text-decoration:underline}a:active{color:#903;text-decoration:none}A.smallbutton{border-style:solid;border-width :1px 1px 1px 1px;margin-left:5px;margin-right:5px;font-size :9px;background-color:#f0f0f0;text-decoration :none;padding-top :0;padding-bottom :0;padding-right :4px;padding-left :4px;line-height:16px;border-color :gray;color:#404040;border-radius:5px;-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px}A:visited.smallbutton{background-color:#f0f0f0;text-decoration :none;color:#404040}A:hover.smallbutton{background-color:#E8E8E8;text-decoration :none;color:#404040}A:active.smallbutton{background-color :#808080;text-decoration :none;color:black}DIV.decale{margin-left:15px}input,textarea,select{border :1px solid gray;border-radius:2px;-webkit-border-top-left-radius:2px;-webkit-border-top-right-radius:2px;-webkit-border-bottom-right-radius:2px;-webkit-border-bottom-left-radius:2px}IMG.preview{border :1px solid #b0b0b0}TD{white-space:nowrap}TD.canwrap{white-space:normal}H2.blogtitle,H1.blogtitle{font-size :20px;font-weight :bolder;margin-left:5px;margin-right:5px;padding-left:5px;padding-right:5px;margin-top:10px;clear:both;background-color :#e0e0e0;margin-bottom:0;border-radius:3px;-webkit-border-top-left-radius:3px;-webkit-border-top-right-radius:3px;-webkit-border-bottom-right-radius:3px;-webkit-border-bottom-left-radius:3px}H2.productAdvertising,H2.articleadvertising{font-size :15px;font-weight :bolder;margin-left:5px;margin-right:5px;padding-left:5px;padding-right:5px;clear:both;background-color :#f0f0f0;margin-bottom:0;border-radius:3px;-webkit-border-top-left-radius:3px;-webkit-border-top-right-radius:3px;-webkit-border-bottom-right-radius:3px;-webkit-border-bottom-left-radius:3px}.homeBanner{font-size :25px;color:#606060;font-weight :bolder;margin-left:5px;margin-right:5px;padding-left:5px;padding-right:5px;background-color :#e0e0e0;margin-bottom:0;line-height:40px;height:50px;border-radius:3px;-webkit-border-top-left-radius:3px;-webkit-border-top-right-radius:3px;-webkit-border-bottom-right-radius:3px;-webkit-border-bottom-left-radius:3px}H2.blogtext{font-size :18px;font-weight :bolder;margin-left:5px;margin-bottom:10px;padding-bottom:0}H3.blogtext{font-size :14px;font-weight :bolder;margin-left:5px;margin-bottom:0;padding-bottom:0}H4.blogtext{font-size :14px;font-weight :normal;font-style :italic;margin-left:5px;margin-bottom:0;padding-bottom:0}P.blogtext{text-align:justify;margin-left:5px;margin-right:5px;margin-top:0;padding-top:0}P.blogauthor{font-size:10px;color :grey;text-align:right;margin-right:5px;margin-top:0;line-height :10px}P.blogcomtext{text-align:justify;font-size:13px;margin-left:15px;margin-right:5px;word-wrap:break-word}table.blogcombanner{background-color:#e0e0e0}table.genericcombanner{background-color:#f4f4f4;border-radius:3px;-webkit-border-top-left-radius:3px;-webkit-border-top-right-radius:3px;-webkit-border-bottom-right-radius:3px;-webkit-border-bottom-left-radius:3px}.blogcenteredimage{text-align:center;font-style:italic;color:#606060;font-size:12px}.blogequation{text-align:center;font-style:italic;font-size:24px}TD.commentsCount{font-size:14px}SPAN.strike{text-decoration:line-through}IMG.i18nlnk{border:0 solid blue;vertical-align:top;cursor:pointer}.i18ninput{border:1px solid #808080;font-family:Arial,sans-serif;font-size:14px;position:relative;background:white;width:550px;height:200px;overflow:scroll}#MainMenu,#MainMenu ul{padding:0;padding-right:20px;margin:0;list-style:none;float:right;font-size:14px;font-weight:bold}#MainMenu li{float:left;position:relative}.mainMenuItem{border:0 solid black;padding-bottom:10px}.mainMenuItem a{margin-left:6px;margin-right:8px;text-decoration:none}.subMenu{display:none;position:absolute;top:1.2em;left:0;background:rgba(255,255,255,0.8);border-left:1px solid #808080;z-index:6}.subMenu li{width:100%;white-space:nowrap;line-height:20px;border:0 solid black;padding-left:8px}.subMenu li a{text-decoration:none}#MainMenu A:visited{color :#808080}#MainMenu A:hover{color :black}#MainMenu A:active{color :#808080}#MainMenu li>ul{top:auto;left:auto}#MainMenu li:hover ul,li.over ul{display:block}DIV.title{padding-left:5px;padding-right:5px;background-color :#e0e0e0;padding-bottom:0;border-radius:5px;-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px}H2.productSection{font-size :16px;font-weight :bolder;padding-left:5px;margin-right:5px;margin-bottom:3px;padding-bottom:3px;width:100%;clear:both;background-color :#F0F0F0;border-radius:3px;-webkit-border-top-left-radius:3px;-webkit-border-top-right-radius:3px;-webkit-border-bottom-right-radius:3px;-webkit-border-bottom-left-radius:3px}TD.navitem{font-weight :bolder;line-height:20px;background-color:#f0f0f0;text-decoration :none;padding :4px;border-color :gray;color:#808080;border-radius:3px;-webkit-border-top-left-radius:3px;-webkit-border-top-right-radius:3px;-webkit-border-bottom-right-radius:3px;-webkit-border-bottom-left-radius:3px}H2.productcateg{padding-left:10px;background-color:#f0f0f0;border-radius:10px;-webkit-border-top-left-radius:10px;-webkit-border-top-right-radius:10px;-webkit-border-bottom-right-radius:10px;-webkit-border-bottom-left-radius:10px;width:520px;line-height:50px;height:50px}H3.product{width:100%;background-color:#f0f0f0;padding-left:5px;-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px}IMG.blogimage{margin-top:5px;margin-bottom:5px;border-radius:5px;-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;border:1px solid #808080}IMG.producticon{border-radius:5px;-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;float:left;border:2px solid #a0a0a0;margin-right:5px;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px}img.accessoryicon{border-radius:5px;-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;border:1px solid #a0a0a0;margin-right:5px;padding-top:5px;padding-bottom:5px;padding-left:5px;padding-right:5px;height:45px}TD.yoctovideo{background-color:#808080;padding:10px 10px 10px 10px;border-radius:10px;-webkit-border-top-left-radius:10px;-webkit-border-top-right-radius:10px;-webkit-border-bottom-right-radius:10px;-webkit-border-bottom-left-radius:10px}DIV.sourcecode{font-size:12px;color:#606060;background-color:#F0F0F0;border:1px solid #D0D0D0;text-align:left;border-radius:10px;-webkit-border-top-left-radius:10px;-webkit-border-top-right-radius:10px;-webkit-border-bottom-right-radius:10px;-webkit-border-bottom-left-radius:10px;margin-left:5px;margin-right:5px;padding:10px 5px;font-family:'Courier New',courier,sans-serif;margin-bottom:0}P.sourcecode{font-size:12px;color:#606060;background-color:#F0F0F0;border:1px solid #D0D0D0;border-radius:10px;text-align:left;-webkit-border-top-left-radius:10px;-webkit-border-top-right-radius:10px;-webkit-border-bottom-right-radius:10px;-webkit-border-bottom-left-radius:10px;margin-left:5px;margin-right:5px;padding:10px 5px;font-family:'Courier New',courier,sans-serif,monospace;display:block;unicode-bidi:embed;white-space:pre-wrap}SPAN.searchResultCount{font-size:12px;font-style:italic;color:grey}SPAN.specLeft{float:left;clear:both;white-space:nowrap;margin-top:3px;margin-left:10px}SPAN.specRight{float:right;text-align:right;white-space:normal;margin-top:3px}TD.firmwaredesc,TD.firmwarenotes{border-top:1px solid #808080;vertical-align:top;padding-top:5px;padding-bottom:5px;padding-left:2px;padding-right:2px}TD.firmwarenotes{font-size:10px;white-space:normal}Img.blogrefimg{height:60px;border :1px solid grey;border-radius:5px;-webkit-border-top-left-radius:5px;-webkit-border-top-right-radius:5px;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px}sup{line-height:80%}TABLE.prodspecs{table-layout:fixed;width:100%;border:0 solid #E0E0E0;font-size:12px;overflow:hidden}SPAN.downloadRelease{font-size:11px}TABLE.prodspecs DIV{overflow:hidden;width:297px;height:16px}.specFootnote{font-size:smaller}DIV.spanlike{display:inline}DIV.admintitle{color:#EBEBEB;font-size:60px;font-weight:bold;overflow:hidden;white-space:nowrap}IMG.imgLink{}INPUT.qtyInput{}TD.downloadlink{}TD.commentFooter{font-size:10px;padding-left:10px}@media only screen and (max-device-width:601px){BODY{font-size:22px}BODY.WizBody{font-size:18px}BODY.WizBody TABLE TD{font-size:16px;line-height:12px}BODY.WizBody INPUT{height:16px}#Win2frame TABLE TD{font-size:14px}.subMenu li{line-height:45px}TABLE{font-size:22px}TABLE.prodspecs{font-size:18px}H2.productSection{font-size:24px}A.pagechooser,SPAN.pagechooser{font-size:22px}.blogcenteredimage{font-size:18px}.blogequation{font-size:36px}H3.blogtext{font-size:18px}H2.blogtext{font-size:20px}IMG.producticon{transform:scale(2)}IMG.producticon2{transform:scale(1.25)}P.blogcomtext{font-size:20px}H2.productAdvertising{font-size:20px}H2.articleadvertising{font-size:20px}IMG.imgLink{height:25px}INPUT{font-size:25px}INPUT.qtyInput{font-size:25px}TD.downloadlink{height:32px}TD.commentFooter{font-size:20px}LI.mainMenuItem{line-height:50px}#MainMenu,#MainMenu ul{font-size:28px;line-height :28px}.div_large_center{display:flex;flex-direction:column;background:#cef5ff;align-items:center;}.cal2-month-nav{width:570px;font-family:helvetica;font-size:large;text-align:center}#cal2-month-chooser,#cal2-year-chooser{margin:3px 5px 3px 5px;font-size:14px;color:#2A4A70}.cal2-prev-month,.cal2-next-month{cursor:pointer;color:#2A4A70}.cal2-month-table{width:570px;border-style:none;padding:0;margin:0}.cal2-month-week{border-style:none;padding:0;margin:0}.cal2-month-day{height:80px;border:black;border-style:solid;border-width:0;vertical-align:top;padding:0;margin:0;background-color:#bfc9d4}.cal2-month-dayno{width:79px;text-align:center;font-weight:bold;font-family:helvetica;color:white;background-color:#2A4A70;border-style:none}.cal2-othermonth{background-color:#7F92A9}.cal2-today{background-color:#E0A400}.cal2-month-elem{width:75px;padding:2px;cursor:pointer;font-family:helvetica;font-size:small;color:white;background-color:#2A704A;border:white;border-style:solid;border-width:1px 0 0 0;-moz-border-radius:3px;-webkit-border-radius:3px;border-radius:3px}.apt_section{margin-top:45px;background-color:#f0f0f0;border-radius:5px;padding-left:5px;padding-top:3px;padding-bottom:3px}.horizontal_menubar{display:flex;flex-direction:row;background:red;justify-content:center}
+</style><link rel="apple-touch-icon-precomposed" href="https://www.yoctopuce.com/img/iicon.png">
+<link href="./How to measure wind_ (part 2)_files/windows.css" type="text/css" rel="stylesheet" media="screen,print"></head>
+<body>
+<script>
+var wwwroot          = "/EN";
+var RIGHT_MENU_WIDTH = 175;
+var BANNER_HEIGHT    = 120;
+</script> 
+<form name="serviceform" method="post" action="https://www.yoctopuce.com/EN/article/how-to-measure-wind-part-2">
+<input name="fct" type="hidden" value="">
+<input name="extra" type="hidden" value="">
+<input name="extra2" type="hidden" value="">
+
+<!-- TSECTION #article_details.php#2380# name="serviceform"  !-->
+ 
+
+<!-- TSECTION #neutral.php#3130#!-->
+ 
+</form>
+<script>
+function serviceFormSubmit(){document.forms['serviceform'].submit();}
+function silentReload()
+{document.forms['serviceform'].action =  "/EN/article/how-to-measure-wind-part-2"; 
+ document.forms['serviceform'].elements['fct'].value = "";
+ serviceFormSubmit();
+} 
+</script>
+<div id="ExtraDiv" style="position:absolute; left:0; top:0; width:0px; height:0px; z-index:9999;"></div>
+
+<!-- TSECTION #base.php#130# name="mainspace"  !-->
+
+
+<!-- TSECTION #article_details.php#2465# name="special"  !-->
+
+
+  <script>
+
+    
+   function blogMainPage()
+    {  document.forms["serviceform"].action ='/EN/blog';
+       document.forms["serviceform"].elements["fct"].value = "";
+       serviceFormSubmit();
+    }
+
+   function newComment(int_articleid,str_article_url)
+    {  document.forms["serviceform"].elements["fct"].value   = "newcom";
+       document.forms['serviceform'].elements['extra'].value = int_articleid;
+       document.forms["serviceform"].action="https://www.yoctopuce.com/EN/article/"+str_article_url;
+       serviceFormSubmit();
+    }     
+  
+   function editComment(int_commentid,str_article_url)
+    {  document.forms["serviceform"].elements["fct"].value   = "editcom";
+       document.forms['serviceform'].elements['extra'].value =  int_commentid;
+       document.forms["serviceform"].action=="/https://www.yoctopuce.com/EN/article/"+str_article_url;
+       serviceFormSubmit();
+    }
+
+   </script>   
+     
+  
+
+   
+  <script>
+
+  function silentReload(str_anchor)
+  {  document.forms['serviceform'].action = setUrlAnchor( "/EN/article/how-to-measure-wind-part-2",str_anchor); 
+     document.forms['serviceform'].elements['fct'].value = "";
+     document.forms['serviceform'].elements['extra'].value = 721490319;
+	 serviceFormSubmit();
+  } 
+ 
+  </script>
+
+<!-- TSECTION #base.php#406#!-->
+
+<div id="Layer2" style="position:absolute; left:0px; top:120px; right:0px; height:416px; z-index:2"> 
+
+<!-- TSECTION #menu-right.php#128# name="main"  !-->
+
+<!-- User data -->
+<div id="title" class="admintitle" style="position:absolute; left:125px; top:-115px; right:0px; z-index:1">
+How to measure wind? (part 2)</div>
+<div id="userdata" style="position:absolute; left: 50%;transform: translateX(-50%); top:0px; width:505px; height:416px; z-index:2">
+
+<!-- TSECTION #article_details.php#6236# name="userdata"  !-->
+
+<div id="blogmain" style="position:absolute;left: 50%;transform: translateX(-50%);top:50px;width:600px;border-left:1px dashed #E0E0E0;border-right:1px dashed #E0E0E0;">
+<div class="spanlike" itemscope="" itemtype="http://schema.org/Article">
+<h1 class="blogtitle" itemprop="name">How to measure wind? (part 2)</h1><p class="blogauthor" itemprop="author" itemscope="" itemtype="http://schema.org/Person">By <span itemprop="name">martinm</span>, in <i>DIY</i>, january 18,2013.</p><span itemprop="datePublished" content="2013-01-18"> </span>
+<div class="spanlike" itemprop="articleBody"><p class="blogtext"><img itemprop="image" class="blogimage" src="./How to measure wind_ (part 2)_files/anenometer_logo_2.jpg" style="float:left;margin-right:5px;" alt="" title="">Last week, we built an <a href="https://www.yoctopuce.com/EN/article/how-to-measure-wind-part-1">anemometer</a> allowing you to measure wind speed by USB. This week, we describe the complementary tool: a wind vane allowing you to know the wind direction. With USB reading of course, otherwise it's not fun.
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>A wind vane is a steerable device, with a shape designed so that it moves spontaneously into the wind's eye. In short, it's a kind of arrow, mounted on an axle, and which moves by itself. Determining wind direction consists therefore in determining the absolute position of the axle on which the arrow is mounted.
+<br></p><p class="blogcenteredimage"><img class="blogimage" src="./How to measure wind_ (part 2)_files/girouette_1.png" onclick="showBigVersion(this,&#39;/pubarchive/2013-01/girouette_big_1.png&#39;,&#39;We\x27re going to use an optical method.&#39;)" style="border:0px solid grey;cursor:pointer;" alt="We&#39;re going to use an optical method." title="We&#39;re going to use an optical method."><br>We're going to use an optical method.</p><p class="blogtext">
+<br>As for the anemometer, we are going to use an optical method, a perforated disk which rotates between leds and phototransistors. The phototransistors are connected to the inputs of a <a href="https://www.yoctopuce.com/EN/products/usb-electrical-sensors/yocto-knob">Yocto-Knob</a>. Each time a phototransistor is lighted by the opposite led, it becomes conductive. The <a href="https://www.yoctopuce.com/EN/products/usb-electrical-sensors/yocto-knob">Yocto-Knob</a> can detect this conductive state. We associate bit 1 with the conductive state and bit 0 to the blocking state of each phototransistor. Knowing that a <a href="https://www.yoctopuce.com/EN/products/usb-electrical-sensors/yocto-knob">Yocto-Knob</a> has five inputs, we can encode <i>2<sup>5</sup> = 32</i> positions.
+<br>
+<br>
+<br>We therefore need to arrange the phototransistors and the holes on the disk so that we can encode a maximum of positions in a minimum of space. It so happens that a given <a href="http://www.winzurf.co.nz/Single_Track_Grey_Code_Patent/Single_track_Grey_code_encoder_patent.pdf">Bruce Spedding</a> imagined a method, later improved by <a href="http://www.hpl.hp.com/techreports/2000/HPL-2000-81.pdf">Alain P. Hiltgen and Kenneth G. Paterson</a>, called "<i>Single Track Gray Code</i>". This method presents two noticeable features: first, generated codes differ only from one bit from one position to another. This is the principle of <a href="http://en.wikipedia.org/wiki/Gray_code">Gray codes</a>, and this limits the risks of reading errors for intermediary positions. Second, the sensors are located on the same circular track, which enables us to build very compact encoders. The price to pay is that the number of codable positions is smaller than <i>2<sup>n</sup></i>. For example, with 5 phototransistors, we can encode only 30 positions. This provides a precision of 12°, which is largely enough when we need to determine wind direction. </p><p class="blogcenteredimage"><img class="blogimage" src="./How to measure wind_ (part 2)_files/STGC_2.gif" style="border:0px solid grey;" alt="How the used optical encoding (Single Track Grey Code) works." title="How the used optical encoding (Single Track Grey Code) works."><br>How the used optical encoding (Single Track Grey Code) works.</p><p class="blogtext">
+<br>
+<br><b>Wiring</b>
+<br>Wiring is rather similar to that of the anemometer, except that we now have 5 phototransistors. We learned that the leds used with the anemometer were no longer manufactured, therefore we chose the <i>L-7104SEC-J3</i> from <i>Kingbright</i> coupled with 200 &#937; resistances. These leds are still powered from the USB 5V. The phototransistors are still SFH 310-2/3.
+<br></p><p class="blogcenteredimage"><img class="blogimage" src="./How to measure wind_ (part 2)_files/girouette_wiring_1.png" onclick="showBigVersion(this,&#39;/pubarchive/2013-01/girouette_wiring_big_1.png&#39;,&#39;Led and phototransistor wiring&#39;)" style="border:0px solid grey;cursor:pointer;" alt="Led and phototransistor wiring" title="Led and phototransistor wiring"><br>Led and phototransistor wiring</p><p class="blogtext">
+<br>This time, seven wires must come out of the encoder. You might be tempted to place the <a href="https://www.yoctopuce.com/EN/products/usb-electrical-sensors/yocto-knob">Yocto-Knob</a> inside the wind vane so that only the USB cable comes out. But it's better to keep the <a href="https://www.yoctopuce.com/EN/products/usb-electrical-sensors/yocto-knob">Yocto-Knob</a> inside, safe from cold and from humidity.
+<br>
+<br><b>Putting it together</b>
+<br>Once again, we used our 3D printer to make the parts of our wind vane. We used the same assembly technique based on threaded inserts applied with a soldering iron.
+<br></p><p class="blogcenteredimage"><img class="blogimage" src="./How to measure wind_ (part 2)_files/inserts_3.jpg" onclick="showBigVersion(this,&#39;/pubarchive/2013-01/inserts_big_2.jpg&#39;,&#39;Threaded inserts are mounted on the parts, allowing us to screw them together.&#39;)" style="cursor:pointer;" alt="Threaded inserts are mounted on the parts, allowing us to screw them together." title="Threaded inserts are mounted on the parts, allowing us to screw them together."><br>Threaded inserts are mounted on the parts, allowing us to screw them together.</p><p class="blogtext">
+<br>
+<br>The first step is to wire the phototransistors, the resistances, and the leds. It's a bit tricky, given the size of the parts, but we can do it. When we have soldered everything, we drowned everything in hot glue to prevent humidity issues (check that everything works first :-)
+<br></p><p class="blogcenteredimage"><img class="blogimage" src="./How to measure wind_ (part 2)_files/wiring_1.jpg" onclick="showBigVersion(this,&#39;/pubarchive/2013-01/wiring_big_1.jpg&#39;,&#39;Connecting the leds and the phototransistors&#39;)" style="border:0px solid grey;cursor:pointer;" alt="Connecting the leds and the phototransistors" title="Connecting the leds and the phototransistors"><br>Connecting the leds and the phototransistors</p><p class="blogtext"></p><p class="blogcenteredimage"><img class="blogimage" src="./How to measure wind_ (part 2)_files/wiring_photo_1.jpg" onclick="showBigVersion(this,&#39;/pubarchive/2013-01/wiring_photo_big_1.jpg&#39;,&#39;The same, for real&#39;)" style="cursor:pointer;" alt="The same, for real" title="The same, for real"><br>The same, for real</p><p class="blogtext">
+<br>The parts of the body fit into one another, we use the same <a href="http://www.igus.com/wpck/default.aspx?PageName=XIROS_B180&amp;CL=DE-en">stainless ball bearings</a> as for the anemometer.
+<br>
+<br></p><p class="blogcenteredimage"><img class="blogimage" src="./How to measure wind_ (part 2)_files/body_assembly_1.jpg" onclick="showBigVersion(this,&#39;/pubarchive/2013-01/body_assembly_big_1.jpg&#39;,&#39;Assembling the body&#39;)" style="border:0px solid grey;cursor:pointer;" alt="Assembling the body" title="Assembling the body"><br>Assembling the body</p><p class="blogtext"></p><p class="blogcenteredimage"><img class="blogimage" src="./How to measure wind_ (part 2)_files/light_test_1.jpg" onclick="showBigVersion(this,&#39;/pubarchive/2013-01/light_test_big_1.jpg&#39;,&#39;Testing the leds&#39;)" style="cursor:pointer;" alt="Testing the leds" title="Testing the leds"><br>Testing the leds</p><p class="blogtext">
+<br>
+<br>Assembling the arrow is relatively easy, the horizontal rod is made of two parts glued together, thus sandwiching the vertical stabilizer. The arrow is blocked on the axle with headless screws. To prevent the measures from being corrupted in case of a not quite horizontal installation of the wind vane, we use metallic washers to ballast the arrow.
+<br> </p><p class="blogcenteredimage"><img class="blogimage" src="./How to measure wind_ (part 2)_files/assemblage_fleche_1.jpg" onclick="showBigVersion(this,&#39;/pubarchive/2013-01/assemblage_fleche_big_1.jpg&#39;,&#39;Assembling the arrow, ballasting is performed  with metallic washers.&#39;)" style="border:0px solid grey;cursor:pointer;" alt="Assembling the arrow, ballasting is performed  with metallic washers." title="Assembling the arrow, ballasting is performed  with metallic washers."><br>Assembling the arrow, ballasting is performed  with metallic washers.</p><p class="blogtext"> </p><p class="blogcenteredimage"><img class="blogimage" src="./How to measure wind_ (part 2)_files/fleche_complete_1.jpg" onclick="showBigVersion(this,&#39;/pubarchive/2013-01/fleche_complete_big_1.jpg&#39;,&#39;The complete arrow&#39;)" style="cursor:pointer;" alt="The complete arrow" title="The complete arrow"><br>The complete arrow</p><p class="blogtext"></p><p class="blogcenteredimage"><img class="blogimage" src="./How to measure wind_ (part 2)_files/girouette_complete_1.jpg" onclick="showBigVersion(this,&#39;/pubarchive/2013-01/girouette_complete_big_1.jpg&#39;,&#39;OK, the hardware part is done, let\x27s take care of the software.&#39;)" style="cursor:pointer;" alt="OK, the hardware part is done, let&#39;s take care of the software." title="OK, the hardware part is done, let&#39;s take care of the software."><br>OK, the hardware part is done, let's take care of the software.</p><p class="blogtext">
+<br>
+<br> <b>Programming</b>
+<br>Programming is only slightly more complex than for the anemometer. At regular interval, we check the state of each input of the  <a href="https://www.yoctopuce.com/EN/products/usb-electrical-sensors/yocto-knob">Yocto-Knob</a> with the <i>get_isPressed()</i> function.Taking the state of each input into account, we construct an integer which serves as an index to find the direction in a lookup table. Here is a C# example.
+<br>
+<br> </p><div class="sourcecode"><span style="color: #CE7B00; font-style: italic;">// orientation lookup table , 0 and 31srt indexes are invalid</span><br>
+<span style="color: #2e92c7;">int</span><span style="color: #0000E6;">[</span><span style="color: #0000E6;">]</span> table <span style="color: #0000E6;">=</span> <span style="color: #0000E6;">{</span> <span style="color: #0000E6;">-</span><span style="color: #009900;">1</span>, &nbsp;<span style="color: #009900;">0</span>, <span style="color: #009900;">72</span>, <span style="color: #009900;">12</span>,<span style="color: #009900;">144</span>,<span style="color: #009900;">132</span>, <span style="color: #009900;">84</span>,<span style="color: #009900;">120</span>,<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #009900;">216</span>,<span style="color: #009900;">348</span>,<span style="color: #009900;">204</span>, <span style="color: #009900;">24</span>,<span style="color: #009900;">156</span>,<span style="color: #009900;">168</span>,<span style="color: #009900;">192</span>,<span style="color: #009900;">180</span>,<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #009900;">288</span>,<span style="color: #009900;">300</span>, <span style="color: #009900;">60</span>, <span style="color: #009900;">48</span>,<span style="color: #009900;">276</span>,<span style="color: #009900;">312</span>, <span style="color: #009900;">96</span>,<span style="color: #009900;">108</span>,<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #009900;">228</span>,<span style="color: #009900;">336</span>,<span style="color: #009900;">240</span>, <span style="color: #009900;">36</span>,<span style="color: #009900;">264</span>,<span style="color: #009900;">324</span>,<span style="color: #009900;">252</span>, <span style="color: #0000E6;">-</span><span style="color: #009900;">1</span><span style="color: #0000E6;">}</span><span style="color: #0000E6;">;</span><br>
+<br>
+<span style="color: #CE7B00; font-style: italic;">// retrieves the anButtons functions, this assumes inputs</span><br>
+<span style="color: #CE7B00; font-style: italic;">// are named "bit0" .. "bit4"</span><br>
+<span style="color: #2e92c7;">YAnButton</span><span style="color: #0000E6;">[</span><span style="color: #0000E6;">]</span> bits <span style="color: #0000E6;">=</span> <a href="http://www.google.com/search?q=new+msdn.microsoft.com"><span style="color: #0000E6;">new</span></a> <span style="color: #2e92c7;">YAnButton</span><span style="color: #0000E6;">[</span><span style="color: #009900;">5</span><span style="color: #0000E6;">]</span><span style="color: #0000E6;">;</span><br>
+<span style="color: #0000E6;">for</span> <span style="color: #0000E6;">(</span><span style="color: #2e92c7;">int</span> i <span style="color: #0000E6;">=</span> <span style="color: #009900;">0</span><span style="color: #0000E6;">;</span> i <span style="color: #0000E6;">&lt;</span> <span style="color: #009900;">5</span><span style="color: #0000E6;">;</span> i<span style="color: #0000E6;">++</span><span style="color: #0000E6;">)</span><br>
+&nbsp; bits<span style="color: #0000E6;">[</span>i<span style="color: #0000E6;">]</span> <span style="color: #0000E6;">=</span> <span style="color: #2e92c7;">YAnButton</span><span style="color: #0000E6;">.</span><span style="color: #006666;">FindAnButton</span><span style="color: #0000E6;">(</span><span style="color: #009900;">"bit"</span> <span style="color: #0000E6;">+</span> i<span style="color: #0000E6;">.</span><span style="color: #006666;">ToString</span><span style="color: #0000E6;">(</span><span style="color: #0000E6;">)</span><span style="color: #0000E6;">)</span><span style="color: #0000E6;">;</span><br>
+<br>
+<span style="color: #0000E6;">while</span> <span style="color: #0000E6;">(</span><span style="color: #0000E6;">true</span><span style="color: #0000E6;">)</span><br>
+&nbsp; <span style="color: #0000E6;">{</span> <span style="color: #2e92c7;">int</span> index<span style="color: #0000E6;">=</span> <span style="color: #009900;">0</span><span style="color: #0000E6;">;</span><br>
+&nbsp; &nbsp; <span style="color: #CE7B00; font-style: italic;">// checks for device presence</span><br>
+&nbsp; &nbsp; <span style="color: #0000E6;">if</span> <span style="color: #0000E6;">(</span>bits<span style="color: #0000E6;">[</span><span style="color: #009900;">0</span><span style="color: #0000E6;">]</span><span style="color: #0000E6;">.</span><span style="color: #006666;">isOnline</span><span style="color: #0000E6;">(</span><span style="color: #0000E6;">)</span><span style="color: #0000E6;">)</span><br>
+&nbsp; &nbsp; &nbsp; <span style="color: #0000E6;">{</span> <span style="color: #CE7B00; font-style: italic;">// builds the index</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000E6;">for</span> <span style="color: #0000E6;">(</span><span style="color: #2e92c7;">int</span> i <span style="color: #0000E6;">=</span> <span style="color: #009900;">0</span><span style="color: #0000E6;">;</span> i <span style="color: #0000E6;">&lt;</span> <span style="color: #009900;">5</span><span style="color: #0000E6;">;</span> i<span style="color: #0000E6;">++</span><span style="color: #0000E6;">)</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #0000E6;">if</span> <span style="color: #0000E6;">(</span>bits<span style="color: #0000E6;">[</span>i<span style="color: #0000E6;">]</span><span style="color: #0000E6;">.</span><span style="color: #006666;">get_isPressed</span><span style="color: #0000E6;">(</span><span style="color: #0000E6;">)</span> <span style="color: #0000E6;">==</span> <span style="color: #2e92c7;">YAnButton</span><span style="color: #0000E6;">.</span><span style="color: #006666;">ISPRESSED_TRUE</span><span style="color: #0000E6;">)</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; index <span style="color: #0000E6;">|=</span> <span style="color: #0000E6;">(</span><span style="color: #009900;">1</span> <span style="color: #0000E6;">&lt;&lt;</span> i<span style="color: #0000E6;">)</span><span style="color: #0000E6;">;</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #CE7B00; font-style: italic;">// displays orientation using table lookup</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp; <span style="color: #660066;">Console</span><span style="color: #0000E6;">.</span><span style="color: #006666;">WriteLine</span><span style="color: #0000E6;">(</span>table<span style="color: #0000E6;">[</span>index<span style="color: #0000E6;">]</span><span style="color: #0000E6;">.</span><span style="color: #006666;">ToString</span><span style="color: #0000E6;">(</span><span style="color: #0000E6;">)</span><span style="color: #0000E6;">)</span><span style="color: #0000E6;">;</span><br>
+&nbsp; &nbsp; &nbsp; &nbsp;<span style="color: #0000E6;">}</span> <span style="color: #0000E6;">else</span> <span style="color: #660066;">Console</span><span style="color: #0000E6;">.</span><span style="color: #006666;">WriteLine</span><span style="color: #0000E6;">(</span><span style="color: #009900;">"offline"</span><span style="color: #0000E6;">)</span><span style="color: #0000E6;">;</span><br>
+&nbsp; &nbsp; <span style="color: #2e92c7;">YAPI</span><span style="color: #0000E6;">.</span><span style="color: #006666;">Sleep</span><span style="color: #0000E6;">(</span><span style="color: #009900;">1000</span>, <span style="color: #0000E6;">ref</span> errmsg<span style="color: #0000E6;">)</span><span style="color: #0000E6;">;</span> <span style="color: #CE7B00; font-style: italic;">// waits for 1 sec</span><br>
+&nbsp; <span style="color: #0000E6;">}</span></div><p class="blogtext">
+<br>
+<br>Make sure the pressed/released states are detected correctly, if needed you can calibrate the inputs with the Virtual Hub.
+<br>
+<br>This wind vane doesn't have an absolute reference for the North direction. You can either install it so that it indicates 0° when the arrow points North, or you can install it at random and add an offset in the direction computation to provide correct values.
+<br>
+<br><b>Conclusion</b>
+<br>You now know how to build the tools necessary to measure the speed and the direction of the wind with the help of Yoctopuce modules. A piece of advice, however. The <i>Single Track Gray Code</i> has been the object of <a href="http://www.winzurf.co.nz/Single_Track_Grey_Code_Patent/Single_track_Grey_code_encoder_patent.pdf"> a patent request</a> in 1994. This is not an issue if you build a wind vane for your own usage, but if you intend to use this system to commercialize a product, make inquiries beforehand.
+<br></p><p class="blogcenteredimage"><img class="blogimage" src="./How to measure wind_ (part 2)_files/wind_vane_irl_1.jpg" onclick="showBigVersion(this,&#39;/pubarchive/2013-01/wind_vane_irl_big_1.jpg&#39;,&#39;Your very own USB wind vane&#39;)" style="cursor:pointer;" alt="Your very own USB wind vane" title="Your very own USB wind vane"><br>Your very own USB wind vane</p><p class="blogtext">
+<br>You can download the files necessary to 3D print this wind vane on <a href="http://www.thingiverse.com/thing:42858">Thingiverse</a>.
+<br>  </p></div></div><div class="socialBar"><table style="width:100%"><tbody><tr>
+<td style="width:100px"><a class="smallbutton" href="javascript:newComment(721490319,&quot;how-to-measure-wind-part-2&quot;);">Add a comment</a></td>
+<td class="commentsCount">2 comments</td>
+<td style="text-align:right;width:100px;"><a class="smallbutton" href="https://www.yoctopuce.com/EN/blog/page_126#721490319">Back to blog</a></td>
+</tr></tbody></table></div>
+<br><br><br><table id="COM2110962433" class="blogcombanner" style="width:100%"><tbody><tr><td><b>1</b> - cloud_runner </td><td style="text-align:right"><i>Sunday,june 16,2024 10H26</i></td></tr></tbody></table><p class="blogcomtext">Would you be willing to explain this bit of the code?
+<br>
+<br>In particular the 'construct[ion] of an integer to serve as an index for the lookup table'?
+<br>
+<br>This looks pretty elegant and a bit beyond my understanding at the moment. Thank you very much! 
+<br>
+<br>     { // builds the index
+<br>        for (int i = 0; i &lt; 5; i++)
+<br>          if (bits[i].get_isPressed() == YAnButton.ISPRESSED_TRUE)
+<br>            index |= (1 &lt;&lt; i);</p><table id="COM1823597363" class="blogcombanner" style="width:100%"><tbody><tr><td><b>2</b> - martinm  <span style="font-size:12px;font-weight:bold">(Yocto-Team)</span></td><td style="text-align:right"><i>Monday,june 17,2024 2H52</i></td></tr></tbody></table><p class="blogcomtext">It is based on the fact that any positive integer can be decomposed in a unique combination of powers of two ( see en.wikipedia.org/wiki/Binary_number ). Here is a less subtle version of the same code.
+<br>
+<br><span style="font-family:monospace">index=0;
+<br>if (bits[0].get_isPressed() == YAnButton.ISPRESSED_TRUE) index=index+1; //2^0
+<br>if (bits[1].get_isPressed() == YAnButton.ISPRESSED_TRUE) index=index+2; //2^1
+<br>if (bits[2].get_isPressed() == YAnButton.ISPRESSED_TRUE) index=index+4; //2^2
+<br>if (bits[3].get_isPressed() == YAnButton.ISPRESSED_TRUE) index=index+8; //2^3
+<br>if (bits[4].get_isPressed() == YAnButton.ISPRESSED_TRUE) index=index+16;//2^4
+<br></span>
+<br></p></div>
+ 
+
+<!-- TSECTION #menu-right.php#521#!-->
+ 
+
+<!-- TSECTION #menu-right.php#600#!-->
+   
+</div>
+
+<!-- TSECTION #article_details.php#8401# name="menu"  !-->
+
+ 
+    
+
+<!-- TSECTION #menu-right.php#691#!-->
+  
+
+<!-- TSECTION #base.php#589#!-->
+
+</div>
+<div id="Layer0" style="position:absolute; left:0px; top:0px; right:0px; height:103px; z-index:0;overflow:hidden;background-image:url(&#39;/img/banner_level1bg.png&#39;);background-repeat:repeat-x"></div>
+<div id="Layer1" style="position:absolute; left:0px; top:0px; right:0px; height:103px; z-index:1;overflow:hidden;background-image:url(&#39;/img/banner_level1.png&#39;);background-repeat:no-repeat"></div>
+<div id="Layer3" style="position:absolute; left:0px; top:0px; right:0px; height:103px; z-index:3;overflow:hidden;background-image:url(&#39;/img/banner_level2.png&#39;);background-repeat:no-repeat;"></div>
+<div id="Layer5" style="position:absolute; left:0px; top:0px; width:200px; height:80px; z-index:5">
+<a href="https://www.yoctopuce.com/EN"><img src="./How to measure wind_ (part 2)_files/yoctopuce-logo.png" style="margin-left:5px;margin-top:5px;border: 0px;" alt="Yoctopuce, get your stuff connected."></a>
+</div>
+<div id="menucontainer" style="position:absolute;left:120px;right:10px;top:5px;height:1px;border:0px solid red;z-index:100">
+
+<script>
+function userlogin(str_fct,str_extra,str_msg)
+ { if (str_msg=='') str_msg= "<br>Please enter your email address<br>and your Yoctopuce password"; 
+   if (str_fct=='') str_fct='';
+   OpenLoginDiv(0,'/EN/article/how-to-measure-wind-part-2',str_msg,"<hr><br><a href='javascript:newAccount()' class='button'>Create a new Yoctopuce account</a>",str_fct,str_extra,true,true);
+}
+function newAccount()
+ {openWindow(wwwroot+'/register.php','New account');
+ }
+function openSearchWindow(){openWindow('https://www.yoctopuce.com/EN/search.php?sessionid=-1','Search');}
+
+</script>
+<ul id="MainMenu">
+<li class="mainMenuItem" id="MainMenu0"><a name="MainMenuLink" href="https://www.yoctopuce.com/EN">Yoctopuce</a>
+<ul class="subMenu">
+<li><a href="https://www.yoctopuce.com/EN/aboutus.php">About Yoctopuce</a></li>
+<li><a href="https://www.yoctopuce.com/EN/cg.php">General terms and conditions</a></li>
+<li><a href="https://www.yoctopuce.com/EN/privacy-policy.php">Personal data protection</a></li>
+<li><a href="https://www.yoctopuce.com/EN/product-changes.php">Products lifecycle</a></li>
+<li><a href="https://www.yoctopuce.com/EN/port.php">Shipping fees</a></li>
+<li><a href="https://www.yoctopuce.com/EN/resellers.php">Resellers</a></li>
+<li><a href="https://www.yoctopuce.com/EN/sitemap.php">Site map</a></li>
+<li><a href="https://www.yoctopuce.com/EN/contactus.php">Contact us</a></li>
+</ul>
+</li>
+<li class="mainMenuItem" id="MainMenu1"><a name="MainMenuLink" href="https://www.yoctopuce.com/EN/productcategories.php">Products</a>
+<ul class="subMenu">
+<li><a href="https://www.yoctopuce.com/EN/products/category/usb-environmental-sensors">USB Environmental Sensors</a></li>
+<li><a href="https://www.yoctopuce.com/EN/products/category/usb-position-sensors">USB Position Sensors</a></li>
+<li><a href="https://www.yoctopuce.com/EN/products/category/usb-electrical-sensors">USB Electrical Sensors</a></li>
+<li><a href="https://www.yoctopuce.com/EN/products/category/usb-electrical-interfaces">USB Electrical Interfaces</a></li>
+<li><a href="https://www.yoctopuce.com/EN/products/category/usb-actuators">USB Actuators</a></li>
+<li><a href="https://www.yoctopuce.com/EN/products/category/rfid">RFID</a></li>
+<li><a href="https://www.yoctopuce.com/EN/products/category/usb-displays">USB Displays</a></li>
+<li><a href="https://www.yoctopuce.com/EN/products/category/extensions-and-networking">Extensions and Networking</a></li>
+<li><a href="https://www.yoctopuce.com/EN/products/category/accessories-and-connectors">Accessories and Connectors</a></li>
+<li><a href="https://www.yoctopuce.com/EN/products/category/enclosures">Enclosures</a></li>
+<li><a href="https://www.yoctopuce.com/EN/products/category/usb-cables">USB Cables</a></li>
+<li><a href="https://www.yoctopuce.com/EN/products/category/discontinued-products">Discontinued products</a></li>
+</ul>
+</li>
+<li class="mainMenuItem" id="MainMenu2"><a name="MainMenuLink" href="javascript:void(0)">Support</a>
+<ul class="subMenu">
+<li><a href="https://www.yoctopuce.com/EN/virtualhub.php">Virtual Hub</a></li>
+<li><a href="https://www.yoctopuce.com/EN/libraries.php">Libraries</a></li>
+<li><a href="https://www.yoctopuce.com/EN/firmwares.php">Firmwares</a></li>
+<li><a href="https://www.yoctopuce.com/EN/tools.php">Tools</a></li>
+<li><a href="https://www.yoctopuce.com/EN/tutorials.php">Tutorials</a></li>
+</ul>
+</li>
+<li class="mainMenuItem" id="MainMenu3"><a name="MainMenuLink" href="https://www.yoctopuce.com/EN/blog.php">News</a>
+<ul class="subMenu">
+<li><a href="https://www.yoctopuce.com/EN/blog.php">Blog</a></li>
+<li><a href="https://www.yoctopuce.com/EN/rssfeed.php">RSS feed</a></li>
+</ul>
+</li>
+<li class="mainMenuItem" id="MainMenu4"><a href="javascript:userlogin(&quot;&quot;,&quot;&quot;,&quot;&quot;)">My Account</a>
+</li>
+<li class="mainMenuItem" id="MainMenu5"><a name="MainMenuLink" href="javascript:void(0)">English</a>
+<ul class="subMenu">
+<li><a href="https://www.yoctopuce.com/FR/article/how-to-measure-wind-part-2">Français</a></li>
+<li><a href="https://www.yoctopuce.com/EN/article/how-to-measure-wind-part-2">English</a></li>
+</ul>
+</li>
+<li class="mainMenuItem" id="MainMenu6"><a href="https://www.yoctopuce.com/EN/search.php">&nbsp;&nbsp;<img class="imgLink" src="./How to measure wind_ (part 2)_files/small_magnifier.png" style="border:0;" alt="Search..." title="Search...">&nbsp;&nbsp;</a>
+<ul class="subMenu">
+</ul>
+</li>
+</ul>
+<script>
+if ('ontouchstart' in window  || navigator.maxTouchPoints)
+{var a=document.getElementsByName('MainMenuLink');
+ for (var i=0;i<a.length;i++)
+  a[i].href='javascript:void(0)';
+}
+</script>
+ 
+</div>
+<div id="rMenuAnchor" style="position: fixed; left: 1891px; top: 145px; width: 1px; height: 1px; border: 0px solid navy; z-index: 10;">
+<div id="colapsedRmenu" class="rightMenuColapsed" onclick="expandRMenu()" style="display:none">
+
+<!-- TSECTION #article_details.php#8096# name="rmenuColapsedContents"  !-->
+
+<img src="./How to measure wind_ (part 2)_files/bookmark.png" alt="Product category">&nbsp;<!-- TSECTION #base.php#2151#!-->
+   
+</div>
+<div id="expandedRmenu" class="rightMenuExpanded" style="visibility: visible; left: -628px;">
+
+<!-- TSECTION #article_details.php#8278# name="rmenuExpandedContents"  !-->
+
+<table style="margin-top:30px;width:100%;border-spacing: 0px;border-collapse: collapse; " class="cart">
+<tbody><tr class="cartheader" onclick="colapseRMenu()"><td>Categories</td></tr>
+<tr><td style="padding-left:5px;"><b style="color:black">All</b></td></tr><tr><td style="padding-left:5px;"><a href="https://www.yoctopuce.com/EN/blog_by_categories/android">Android</a></td></tr><tr><td style="padding-left:5px;"><a href="https://www.yoctopuce.com/EN/blog_by_categories/diy">DIY</a></td></tr><tr><td style="padding-left:5px;"><a href="https://www.yoctopuce.com/EN/blog_by_categories/electronics">Electronics</a></td></tr><tr><td style="padding-left:5px;"><a href="https://www.yoctopuce.com/EN/blog_by_categories/for-the-beginners">For the beginners</a></td></tr><tr><td style="padding-left:5px;"><a href="https://www.yoctopuce.com/EN/blog_by_categories/internet-of-things">Internet of Things</a></td></tr><tr><td style="padding-left:5px;"><a href="https://www.yoctopuce.com/EN/blog_by_categories/measures">Measures</a></td></tr><tr><td style="padding-left:5px;"><a href="https://www.yoctopuce.com/EN/blog_by_categories/misc">Misc</a></td></tr><tr><td style="padding-left:5px;"><a href="https://www.yoctopuce.com/EN/blog_by_categories/new-stuff">New stuff</a></td></tr><tr><td style="padding-left:5px;"><a href="https://www.yoctopuce.com/EN/blog_by_categories/programming">Programming</a></td></tr><tr><td style="padding-left:5px;"><a href="https://www.yoctopuce.com/EN/blog_by_categories/reviews">Reviews</a></td></tr><tr><td style="padding-left:5px;"><a href="https://www.yoctopuce.com/EN/blog_by_categories/tiny-pc">Tiny PC</a></td></tr></tbody></table>
+<script>
+RMenuPresent=true;
+</script>
+
+<!-- TSECTION #base.php#2331#!-->
+   
+</div>  
+</div>
+
+<!-- TSECTION #neutral.php#5560#!-->
+ 
+<script src="./How to measure wind_ (part 2)_files/tools.js"></script>
+<script src="./How to measure wind_ (part 2)_files/draganddrop.js"></script>
+<script src="./How to measure wind_ (part 2)_files/windows.js"></script>
+<script>
+var WinW = GetWindowWidth()-24;  if (WinW<680) WinW=680;
+var WinH = GetWindowHeight(); if (WinH<640) WinH=640;
+var UsableWidth  = WinW
+var UsableHeight = WinH-BANNER_HEIGHT;
+</script>
+ <script>
+     
+</script> 
+
+<!-- TSECTION #article_details.php#8565# name="FinalJsCode"  !-->
+
+ 
+
+<!-- TSECTION #neutral.php#6678#!-->
+
+<script> 
+windowResized();
+var link = document.createElement( "link" );
+link.href = "/css/windows.css";
+link.type = "text/css";
+link.rel = "stylesheet";
+link.media = "screen,print";
+document.getElementsByTagName( "head" )[0].appendChild( link );
+if (typeof RMenuPresent !== 'undefined')
+ { if (RMenuPresent)   window.addEventListener('load', initRMenu, false); }
+</script>
+
+<div state="voice" class="placeholder-icon" id="tts-placeholder-icon" title="Click to show TTS button" style="background-image: url(&quot;chrome-extension://cpnomhnclohkhnikegipapofcjihldck/data/content_script/icons/voice.png&quot;);"><canvas width="36" height="36" class="loading-circle" id="text-to-speech-loader" style="display: none;"></canvas></div></body></html>
