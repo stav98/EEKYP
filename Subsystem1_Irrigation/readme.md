@@ -9,4 +9,10 @@
 <p align = "center">
   <img src="schematics/EEKYP1.png" width="700">
 </p>
-
+Κόλληση των εξαρτημάτων και αρθρωμάτων σύμφωνα με το προηγούμενο σχέδιο
+<table align="center">
+ <tr>
+  <td><img src="Images/EEKYP1_pcb_construction1.jpg" width="500"></td>
+  <td><img src="Images/EEKYP1_pcb_construction2.jpg" width="500"></td>
+  </tr>
+</table>
