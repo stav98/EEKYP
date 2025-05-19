@@ -4,7 +4,7 @@
 <p align = "center">
   <img src="../resources/images/A_Water.png" width="500">
 </p>
-<H3>Κατασκευή</H3>
+<H3>Κατασκευή ηλεκτρονικού κυκλώματος</H3>
 Έγινε κατασκευή του πρωτοτύπου σε διάτρητη πλακέτα perfboard. Πάνω στην πλακέτα τοποθετήθηκαν όλα τα εξαρτήματα και τα αρθρώματα και κολλήθηκαν από την κάτω πλευρά με λεπτά σύρματα. Ακολουθεί το θεωρητικό κύκλωμα της μονάδας.
 <p align = "center">
   <img src="schematics/EEKYP1.png" width="700">
@@ -14,5 +14,12 @@
  <tr>
   <td><img src="Images/EEKYP1_pcb_construction1.jpg" width="300"></td>
   <td><img src="Images/EEKYP1_pcb_construction2.jpg" width="300"></td>
+  </tr>
+</table>
+Το τελικό αποτέλεσμα και οι ηλεκτρολογικές συνδέσεις των αισθητήρων - ενεργοποιητών
+<table align="center">
+ <tr>
+  <td><img src="Images/EEKYP1_pcb.jpg" width="300"></td>
+  <td><img src="Images/EEKYP1_Connections.jpg" width="300"></td>
   </tr>
 </table>
