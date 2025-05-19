@@ -50,6 +50,6 @@
  <tr>
   <td><img src="Images/EEKYP1_Box1.jpg" width="300"></td>
   <td><img src="Images/EEKYP1_Box2.jpg" width="300"></td>
-  <td><img src="Images/EEKYP1_Box3.jpg" width="300"></td>   
+  <td><img src="Images/EEKYP1_Box3.jpg" height="200"></td>   
  </tr>
 </table>
