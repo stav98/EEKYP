@@ -25,8 +25,10 @@
 </table>
 <H3>Σχεδιασμός και εκτύπωση συστήματος ηλεκτροβάνας</H3>
 Επειδή οι ηλεκτροβάνες άρδευσης είναι ακριβές και οι φθηνότερες βαλβίδες λειτουργούν μόνο σε δύο καταστάσεις (ανοιχτό/κλειστό) αποφασίσαμε να χρησιμοποιήσουμε απλές βάνες (κόστος περίπου 1€) και να τις περιστρέφουμε με servo κινητήρα. Για τον λόγο αυτό σχεδιάσαμε στο Freecad μια απλή βάση στήριξης της βάνας και του servo motor.
-<p align = "center">
-  <img src="Images/EEKYP1_Valves.jpg" width="400">
-</p>
-
-<a href="https://youtu.be/jAH-wysm_M4?si=AJ5Le6BRvx6Hh9Bs" title="Παρακολούθηση"><img src="https://i9.ytimg.com/vi/jAH-wysm_M4/mqdefault.jpg?sqp=CKS1rsEG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgVChKMA8=&rs=AOn4CLAjw71PM2-tfwGrt56B-ITRprMlRA"></a>
+<table align="center">
+ <tr>
+  <td><img src="Images/EEKYP1_Valves.jpg" width="350"></td>
+  <td><a href="https://youtu.be/jAH-wysm_M4?si=AJ5Le6BRvx6Hh9Bs" title="Παρακολούθηση video"><img src="https://i9.ytimg.com/vi/jAH-wysm_M4/mqdefault.jpg?sqp=CKS1rsEG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgVChKMA8=&rs=AOn4CLAjw71PM2-tfwGrt56B-ITRprMlRA"></a>
+  </td>
+  </tr>
+</table>
