@@ -34,3 +34,13 @@
 </table>
 <H3>Προγραμματισμός</H3>
 Η μονάδα έχει δύο modules με microcontrollers. Το Arduino Nano και το ESP01. Το πρώτο δέχεται τα σήματα των αισθητήρων και ελέγχει τους ενεργοποιητές, ενώ το δεύτερο είναι υπεύθυνο για την σύνδεση στο διαδίκτυο μέσω WiFi και γενικά κάνει την περισσότερη δουλειά. Τα δύο modules επικοινωνούν μέσω σειριακής θύρας σε ρυθμό 9600bps. Ο κώδικας είναι γραμμένος σε C++ (Arduino wiring) και χρησιμοποιήσαμε το IDE vscode με την επέκταση του PlatformIO. Επίσης στο ESP01 λειτουργεί και ένας mini Web Server γι' αυτό έχουμε και λίγο κώδικα σε HTML καθώς και JQuery - JavaScript.
+<H3>Δοκιμές</H3>
+Έγιναν πολλές δοκιμές και πολλές διορθώσεις μέχρι να πετύχουμε ικανοποιητικά αποτελέσματα. Αρχικά δοκιμάσαμε μέσα στο εργαστήριο την επικοινωνία με το διαδίκτυο, τους αισθητήρες, την κίνηση των ηλεκτροβανών και μετά έγιναν οι δοκιμές σε εξωτερικό περιβάλλον.
+<table align="center">
+ <tr>
+  <td><img src="Images/EEKYP1_irigation_test.jpg" width="300"></td>
+  <td><img src="Images/EEKYP1_Test1.jpg" width="300"></td>
+  <td><a href="https://youtu.be/mC_GyszawEE?si=4FmsMeqU08K2Nvmm" title="Παρακολούθηση video"><img src="https://i9.ytimg.com/vi/mC_GyszawEE/mqdefault.jpg?sqp=CKS1rsEG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGMgZShZMA8=&rs=AOn4CLBd_buCNS7vToXhhPCSbGVyKH9epg"></a>
+  </td> 
+  </tr>
+</table>
