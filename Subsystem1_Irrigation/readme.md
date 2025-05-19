@@ -12,7 +12,9 @@
 Κόλληση των εξαρτημάτων και αρθρωμάτων σύμφωνα με το προηγούμενο σχέδιο
 <table align="center">
  <tr>
-  <td><img src="Images/EEKYP1_pcb_construction1.jpg" width="500"></td>
-  <td><img src="Images/EEKYP1_pcb_construction2.jpg" width="500"></td>
+  <td><img src="Images/EEKYP1_pcb_construction1.jpg" width="300"></td>
+  <td><img src="Images/EEKYP1_pcb_construction2.jpg" width="300"></td>
   </tr>
+ <tr>
+  <td colspan="2"><img src="Images/EEKYP1_pcb_construction3.jpg" height="300"></td>
 </table>
