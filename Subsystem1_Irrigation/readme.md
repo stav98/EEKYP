@@ -53,3 +53,11 @@
   <td><img src="Images/EEKYP1_Box3.jpg" height="200"></td>   
  </tr>
 </table>
+<table align="center">
+ <tr>
+  <td><a href="https://youtu.be/40IbOIiYmcU?si=jXP-6pBD3NdpaN_e" title="Παρακολούθηση video"><img src="https://i9.ytimg.com/vi/40IbOIiYmcU/mqdefault.jpg?sqp=CKS1rsEG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgVyhCMA8=&rs=AOn4CLA4AT-VZV7n_BpF2v1m4nnTyg7RKA"></a>
+  </td>
+  <td><a href="https://youtube.com/shorts/qObYvg2sueE?si=E88Q5BgSeAc8Eiv0" title="Παρακολούθηση video"><img src="https://i9.ytimg.com/vi/qObYvg2sueE/mq2.jpg?sqp=CNzMrsEG-oaymwEoCMACELQB8quKqQMcGADwAQH4AbYIgAKAD4oCDAgAEAEYIyBjKGUwDw==&rs=AOn4CLDptftxKfQKcay7YkMgwIqdCmW5lg"></a>
+  </td> 
+  </tr>
+</table>
