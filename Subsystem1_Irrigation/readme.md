@@ -40,7 +40,7 @@
  <tr>
   <td><img src="Images/EEKYP1_irigation_test.jpg" width="300"></td>
   <td><img src="Images/EEKYP1_Test1.jpg" width="300"></td>
-  <td><a href="https://youtu.be/mC_GyszawEE?si=4FmsMeqU08K2Nvmm" title="Παρακολούθηση video"><img src="https://i9.ytimg.com/vi/mC_GyszawEE/mqdefault.jpg?sqp=CKS1rsEG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGMgZShZMA8=&rs=AOn4CLBd_buCNS7vToXhhPCSbGVyKH9epg"></a>
+  <td><a href="https://youtu.be/mC_GyszawEE?si=4FmsMeqU08K2Nvmm" title="Παρακολούθηση video"><img src="https://i.ytimg.com/vi/mC_GyszawEE/maxresdefault.jpg" width="300"></a>
   </td> 
   </tr>
 </table>
