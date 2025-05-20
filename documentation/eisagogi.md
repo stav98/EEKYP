@@ -17,4 +17,6 @@
 </p>
 
 Για τον προγραμματισμό των αρθρωμάτων ESP-01 χρησιμοποιήσαμε αυτόν τον προγραμματιστή:
-resources/images/esp_programmer.png
+<p align = "center">
+  <img src="../resources/images/esp_programmer.png" width="500">
+</p>
