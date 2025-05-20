@@ -20,3 +20,8 @@
 <p align = "center">
   <img src="../resources/images/esp_programmer.png" width="500">
 </p>
+
+<p align = "center">
+  <img src="../resources/images/programmer.png" width="400">
+</p>
+
