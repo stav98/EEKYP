@@ -22,6 +22,6 @@
 </p>
 
 <p align = "center">
-  <img src="../resources/images/programmer.png" width="400">
+  <img src="../resources/images/programer.png" width="400">
 </p>
 
