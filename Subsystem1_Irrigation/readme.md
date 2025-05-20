@@ -83,7 +83,7 @@
   </td>
   </tr>
   <tr>
-    <td><small>Παρουσίαση τοπικής διαχείρισης μέσω Web Interface</small></td>
+    <td><span style="font-size: 10px">Παρουσίαση τοπικής διαχείρισης μέσω Web Interface</span</td>
     <td>Παρουσίαση κεντρικής διαχείρισης μέσω Node Red</td>
   </tr>
 </table>
