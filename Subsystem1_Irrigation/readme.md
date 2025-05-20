@@ -63,8 +63,8 @@
 </table>
 <table align="center">
  <tr>
-  <td><img src="Images/EEKYP1_BOX4.jpg" width="300"></td>
-  <td><img src="Images/EEKYP1_PCBinBOX.jpg" width="300"></td>  
+  <td><img src="Images/EEKYP1_BOX4.jpg" height="160"></td>
+  <td><img src="Images/EEKYP1_PCBinBOX.jpg" height="160"></td>  
  </tr>
 </table>
 <H3>Πέρασμα σωλήνων και καλωδίων και τελική τοποθέτηση της μονάδας</H3>
@@ -73,3 +73,15 @@
 <p align = "center">
   <img src="Images/EEKYP1_System.jpg" height="400">
 </p>
+<H3>Παρουσίαση της λειτουργίας του υποσυστήματος 1</H3>
+Στον εσωτερικό κήπο του Ε.Κ. δοκιμάσαμε το σύστημα εξοικονόμησης νερού. Στα ακόλουθα video ο μαθητής παρουσιάζει την λειτουργία του.
+<table align="center">
+ <tr>
+  <td><a href="https://youtu.be/C70y3Lhc9u4?si=_cwhh2kix79nuEjM" title="Παρακολούθηση video"><img src="https://i.ytimg.com/vi/C70y3Lhc9u4/maxresdefault.jpg" width="300"></a>
+  </td>
+  <td>Παρουσίαση τοπικής διαχείρισης μέσω Web Interface</td>
+  <td><a href="https://youtu.be/XpcmS4x5700?si=bWU8NFIqS5j7YiVU" title="Παρακολούθηση video"><img src="https://i.ytimg.com/vi/XpcmS4x5700/maxresdefault.jpg" height="160"></a>
+  </td>
+   <td>Παρουσίαση κεντρικής διαχείρισης μέσω Node Red</td>
+  </tr>
+</table>
