@@ -79,9 +79,11 @@
  <tr>
   <td><a href="https://youtu.be/C70y3Lhc9u4?si=_cwhh2kix79nuEjM" title="Παρακολούθηση video"><img src="https://i.ytimg.com/vi/C70y3Lhc9u4/maxresdefault.jpg" width="300"></a>
   </td>
-  <td>Παρουσίαση τοπικής διαχείρισης μέσω Web Interface</td>
   <td><a href="https://youtu.be/XpcmS4x5700?si=bWU8NFIqS5j7YiVU" title="Παρακολούθηση video"><img src="https://i.ytimg.com/vi/XpcmS4x5700/maxresdefault.jpg" height="160"></a>
   </td>
-   <td>Παρουσίαση κεντρικής διαχείρισης μέσω Node Red</td>
+  </tr>
+  <tr>
+    <td>Παρουσίαση τοπικής διαχείρισης μέσω Web Interface</td>
+    <td>Παρουσίαση κεντρικής διαχείρισης μέσω Node Red</td>
   </tr>
 </table>
