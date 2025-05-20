@@ -82,8 +82,8 @@
   <td><a href="https://youtu.be/XpcmS4x5700?si=bWU8NFIqS5j7YiVU" title="Παρακολούθηση video"><img src="https://i.ytimg.com/vi/XpcmS4x5700/maxresdefault.jpg" height="160"></a>
   </td>
   </tr>
-  <tr>
+  <tr align="center">
     <td><sub><sup>Παρουσίαση τοπικής διαχείρισης μέσω Web Interface</sup></sub></td>
-    <td>Παρουσίαση κεντρικής διαχείρισης μέσω Node Red</td>
+    <td><sub><sup>Παρουσίαση κεντρικής διαχείρισης μέσω Node Red</sup></sub></td>
   </tr>
 </table>
