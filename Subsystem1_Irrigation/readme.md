@@ -28,7 +28,7 @@
 <table align="center">
  <tr>
   <td><img src="Images/EEKYP1_Valves.jpg" width="350"></td>
-  <td><a href="https://youtu.be/jAH-wysm_M4?si=AJ5Le6BRvx6Hh9Bs" title="Παρακολούθηση video"><img src="https://i9.ytimg.com/vi/jAH-wysm_M4/mqdefault.jpg?sqp=CKS1rsEG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgVChKMA8=&rs=AOn4CLAjw71PM2-tfwGrt56B-ITRprMlRA"></a>
+  <td><a href="https://youtu.be/jAH-wysm_M4?si=AJ5Le6BRvx6Hh9Bs" title="Παρακολούθηση video"><img src="https://i.ytimg.com/vi/jAH-wysm_M4/maxresdefault.jpg"></a>
   </td>
   </tr>
 </table>
