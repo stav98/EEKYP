@@ -57,9 +57,15 @@
  <tr>
   <td><a href="https://youtu.be/40IbOIiYmcU" title="Παρακολούθηση video"><img src="https://i.ytimg.com/vi/40IbOIiYmcU/maxresdefault.jpg" width="300"></a>
   </td>
-  <td><a href="https://youtube.com/shorts/qObYvg2sueE?si=E88Q5BgSeAc8Eiv0" title="Παρακολούθηση video"><img src="https://i.ytimg.com/vi/qObYvg2sueE/maxres2.jpg" height="200"></a>
+  <td><a href="https://youtube.com/shorts/qObYvg2sueE?si=E88Q5BgSeAc8Eiv0" title="Παρακολούθηση video"><img src="https://i.ytimg.com/vi/qObYvg2sueE/maxres2.jpg" height="160"></a>
   </td> 
   </tr>
+</table>
+<table align="center">
+ <tr>
+  <td><img src="Images/EEKYP1_BOX4.jpg" width="300"></td>
+  <td><img src="Images/EEKYP1_PCBinBOX.jpg" width="300"></td>  
+ </tr>
 </table>
 <H3>Πέρασμα σωλήνων και καλωδίων και τελική τοποθέτηση της μονάδας</H3>
 Πάλι με την βοήθεια του ηλεκτρολογικού τομέα, τοποθετήθηκαν τα λάστιχα και τα μπεκ στις ρίζες των φυτών και συνδέθηκαν οι αισθητήρες ώστε να γίνει η τελική δοκιμή.
