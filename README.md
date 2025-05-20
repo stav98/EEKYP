@@ -29,7 +29,10 @@
 ===========
 
 <a href="/documentation/protasi.md">Αρχική πρόταση - Στόχοι - Λίστα υλικών - Προϋπολογισμός</a><br>
+<a href="/documentation/eisagogi.md">Γενικές πληροφορίες</a><br>
 <a href="Subsystem1_Irrigation/readme.md">Α. Εξοικονόμηση νερού</a><br>
+<a href="Subsystem2_PowerSaving/readme.md">Β. Εξοικονόμηση ενέργειας</a><br>
+<a href="Subsystem3_WeatherStation/readme.md">Γ. Μετεωρολογικός σταθμός</a><br>
 
 Συμμετέχοντες μαθητές
 =====================
