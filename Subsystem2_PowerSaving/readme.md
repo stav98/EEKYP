@@ -16,3 +16,7 @@
    <td><img src="Images/EEKYP2_Box1.jpg" width="300"></td>
   </tr>
 </table>
+Στην ακόλουθη εικόνα φαίνεται η περιγραφή των αρθρωμάτων και των συνδέσεων.
+<p align = "center">
+  <img src="Images/EEKYP2_Connections.png" width="500">
+</p>
