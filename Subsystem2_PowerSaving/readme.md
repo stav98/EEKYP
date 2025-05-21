@@ -8,7 +8,7 @@
 <p align = "center">
   <img src="schematics/EEKYP2 .png" width="700">
 </p>
-Το τελικό αποτέλεσμα και οι ηλεκτρολογικές συνδέσεις των αισθητήρων - ενεργοποιητών
+Η τελική μορφή του πρωτοτύπου και η τοποθέτηση του στο αδιάβροχο ηλεκτρολογικό κουτί.
 <table align="center">
  <tr>
   <td><img src="Images/EEKYP2_pcb.jpg" width="300"></td>
