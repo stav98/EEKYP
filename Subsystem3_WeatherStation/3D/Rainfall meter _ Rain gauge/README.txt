@@ -1,0 +1,1 @@
+Rainfall meter / Rain gauge by sareph on Thingiverse: https://www.thingiverse.com/thing:3779456
