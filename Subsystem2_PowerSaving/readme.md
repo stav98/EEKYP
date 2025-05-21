@@ -6,5 +6,13 @@
 <H3>Κατασκευή ηλεκτρονικού κυκλώματος</H3>
 Έγινε κατασκευή του πρωτοτύπου σε διάτρητη πλακέτα perfboard. Πάνω στην πλακέτα τοποθετήθηκαν όλα τα εξαρτήματα και τα αρθρώματα και κολλήθηκαν από την κάτω πλευρά με λεπτά σύρματα. Ακολουθεί το θεωρητικό κύκλωμα της μονάδας.
 <p align = "center">
-  <img src="schematics/EEKYP1.png" width="700">
+  <img src="schematics/EEKYP2.png" width="700">
 </p>
+Το τελικό αποτέλεσμα και οι ηλεκτρολογικές συνδέσεις των αισθητήρων - ενεργοποιητών
+<table align="center">
+ <tr>
+  <td><img src="Images/EEKYP2_pcb.jpg" width="300"></td>
+  <td><img src="Images/EEKYP2_PCBinBox.jpg" width="300"></td>
+   <td><img src="Images/EEKYP2_Box1.jpg" width="300"></td>
+  </tr>
+</table>
