@@ -8,8 +8,6 @@ void set_out(int, char**);
 
 const char PROGMEM 
    //        1         |           2         |         3            |         4            |          5          |
-   
-   //ct16[] = "getlora"  , ct17[] = "eeclear"  , ct18[] = "verb"      , ct19[] = "save"      , ct20[] = "rst"      ,
      ct01[] = "setout"   , ct02[] = "rst"      , ct03[] = "version"  , ct04[] = "?";
 
 //Δομή συνδεδεμένης λίστας
