@@ -30,6 +30,7 @@
 <a href="Subsystem1_Irrigation/readme.md">Α. Εξοικονόμηση νερού</a><br>
 <a href="Subsystem2_PowerSaving/readme.md">Β. Εξοικονόμηση ενέργειας</a><br>
 <a href="Subsystem3_WeatherStation/readme.md">Γ. Μετεωρολογικός σταθμός</a><br>
+<a href="Subsystem4_NodeRed/readme.md">Δ. Κεντρικό σύστημα διαχείρισης</a><br>
 
 Συμμετέχοντες μαθητές
 =====================
