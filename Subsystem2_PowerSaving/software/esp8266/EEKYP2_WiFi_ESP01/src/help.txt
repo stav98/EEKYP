@@ -1,0 +1,29 @@
+[env:esp01_1m]
+platform = espressif8266
+board = esp01_1m
+framework = arduino
+board_build.filesystem = littlefs
+;data_dir = clima/data
+; set frequency to 160MHz
+board_build.f_cpu = 160000000L
+board_build.f_flash = 40000000L
+;qio > qout > dio > dout
+board_build.flash_mode = dio
+upload_resetmethod = nodemcu ;ck, wifio
+upload_speed = 460800
+monitor_speed = 115200
+monitor_rts=0
+monitor_dtr=0
+upload_port = /dev/ttyUSB0
+board_build.ldscript = eagle.flash.1m256.ld ;1m512.ld
+build_flags = -D PIO_FRAMEWORK_ARDUINO_LWIP2_LOW_MEMORY -D PIO_FRAMEWORK_ARDUINO_ESPRESSIF_SDK22x_191122 -DNDEBUG -DVTABLES_IN_FLASH
+
+
+Για ανέβασμα στο σύστημα αρχείων από αριστερά Platform IO κεφαλάκι, Miscellaneous, PlatformIO Core CLI γράφω:
+pio run --target uploadfs
+ή καλύτερα IO κεφαλάκι, PROJECT TASKS, Platform, Upload Filesystem Image
+
+
+
+========== Λειτουργία ==========================
+
