@@ -53,7 +53,7 @@
 
 <table align="center">
  <tr>
-  <td><img src="images/wind_vane_complete.png" width="300"></td>
+  <td><img src="images/wind_vane_complete.png" height="200"></td>
   <td><img src="images/wind_vane_leds.jpg" width="300"></td>
    <td><img src="images/wind_vane_leds2.jpg" width="300"></td>
    <td><img src="images/wind_vane_transistors.jpg" width="300"></td>
