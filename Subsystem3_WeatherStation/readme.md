@@ -32,3 +32,11 @@
 
 Για την σύνδεση με την πλακέτα θέλουμε 3 καλώδια (5V, GND και τα δεδομένα από τον εκπομπό του φωτοτρανζίστορ που είναι παλμοί μεταβλητής συχνότητας ανάλογα με την ταχύτητα περιστροφής του ρότορα.)
 
+<table align="center">
+ <tr>
+  <td><img src="images/anemometer_complete.jpg" width="300"></td>
+  <td><img src="images/anemometer_botom.jpg" width="300"></td>
+   <td><img src="images/anemometer_top.jpg" width="300"></td>
+   <td><img src="images/anemometer_parts.jpg" width="300"></td>
+  </tr>
+</table>
