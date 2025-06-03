@@ -64,6 +64,6 @@
  <tr>
   <td><img src="images/wind_vane_transistors2.jpg" width="300"></td>
   <td><img src="images/wind_vane_parts.jpg" height="290"></td>
-   <td><img src="images/wind_vane_assembly.jpg" width="300"></td>
+   <td><img src="images/wind_vane_assembly.jpg" height="290"></td>
   </tr>
 </table>
