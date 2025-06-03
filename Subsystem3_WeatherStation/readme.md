@@ -53,9 +53,17 @@
 
 <table align="center">
  <tr>
-  <td><img src="images/anemometer_complete.jpg" width="300"></td>
-  <td><img src="images/anemometer_botom.jpg" width="300"></td>
-   <td><img src="images/anemometer_top.jpg" width="300"></td>
-   <td><img src="images/anemometer_parts.jpg" width="300"></td>
+  <td><img src="images/wind_vane_complete.png" width="300"></td>
+  <td><img src="images/wind_vane_leds.jpg" width="300"></td>
+   <td><img src="images/wind_vane_leds2.jpg" width="300"></td>
+   <td><img src="images/wind_vane_transistors.jpg" width="300"></td>
+  </tr>
+</table>
+
+<table align="center">
+ <tr>
+  <td><img src="images/wind_vane_transistors2.jpg" width="300"></td>
+  <td><img src="images/wind_vane_parts.jpg" width="300"></td>
+   <td><img src="images/wind_vane_assembly.jpg" width="300"></td>
   </tr>
 </table>
