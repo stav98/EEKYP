@@ -71,3 +71,34 @@
    <td><img src="images/wind_vane_assembly.jpg" height="290"></td>
   </tr>
 </table>
+
+## Μετρητής ύψους βροχής
+
+Ο μετρητής ύψους βροχής μετράει την βροχόπτωση σε χιλιοστά. Τα αρχεία για την εκτύπωση 3D υπάρχουν στον κατάλογο 3D. Το νερό συλλέγεται από ένα χωνί διαμέτρου 10cm και οδηγείται σε ένα μηχανισμό τραμπάλας με δύο μικρά δοχεία στα άκρα. Όταν το δοχείο γεμίσει, η τραμπάλα γυρίζει λόγω της βαρύτητας και αδειάζει το νερό, ενώ το άλλο άκρο έχει ανέβει και γεμίζει από το χωνί. Όσο πιο πολύ είναι το νερό τόσο γρηγορότερα πάλεται η τραμπάλα. Στα δύο άκρα έχουν τοποθετηθεί δύο μικροί μαγνήτες ίδιου βάρους. Εμείς ανιχνευούμε τις ταλαντώσεις του ενός άκρου με έναν αισθητήρα hall. Το παλμικό σήμα οδηγήται σε ένα pin του arduino με δυνατότητα διακοπής. (External interrupt)  
+
+<p align = "center">
+  <img src="images/STGC_2.gif" width="400">
+</p>
+
+### Τροποποιήσεις
+
+Οι τροποποιήσεις είναι ίδιες με αυτές του ανεμόμετρου.
+
+Για την σύνδεση με την πλακέτα θέλουμε 7 καλώδια (5V, GND και τα δεδομένα των 5 bits του κώδικα Gray.)
+
+<table align="center">
+ <tr>
+  <td><img src="images/wind_vane_complete.png" height="270"></td>
+  <td><img src="images/wind_vane_leds.jpg" width="300"></td>
+   <td><img src="images/wind_vane_leds2.jpg" width="300"></td>
+   <td><img src="images/wind_vane_transistors.jpg" width="300"></td>
+  </tr>
+</table>
+
+<table align="center">
+ <tr>
+  <td><img src="images/wind_vane_transistors2.jpg" width="300"></td>
+  <td><img src="images/wind_vane_parts.jpg" height="290"></td>
+   <td><img src="images/wind_vane_assembly.jpg" height="290"></td>
+  </tr>
+</table>
