@@ -89,6 +89,6 @@
 <table align="center">
  <tr>
   <td><img src="images/rainfall_meter1.jpg" width="300"></td>
-  <td><img src="images/rainfall_meter1.jpg" width="300"></td>
+  <td><img src="images/rainfall_meter2.jpg" width="300"></td>
   </tr>
 </table>
