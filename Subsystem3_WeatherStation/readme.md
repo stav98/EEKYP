@@ -155,7 +155,7 @@
 <table align="center">
  <tr>
   <td><img src="images/sensors_PCB.jpg" height="200"></td>
-  <td><img src="images/Stevenson1.jpg" width="300"></td>
+  <td><img src="images/Stevenson1.jpg" width="200"></td>
   </tr>
 </table>
 
