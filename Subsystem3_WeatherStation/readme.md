@@ -16,10 +16,13 @@
   <img src="schematics/EEKYP3_schematic.png" width="800">
 </p>
 
+<p>
+ Στις ακόλουθες εικόνες φαίνεται η κατασκευή του πρωτοτύπου σε πλακέτα perfboard.
+</p>
 <table align="center">
  <tr>
   <td><img src="images/EEKYP3_pcb_pinout.png" width="450"></td>
-  <td><img src="images/EEKYP3_PCB2.jpg" width="300"></td>
+  <td><img src="images/EEKYP3_PCB2.jpg" width="270"></td>
   </tr>
 </table>
 
