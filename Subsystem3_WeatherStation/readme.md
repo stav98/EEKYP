@@ -5,8 +5,8 @@
 
 <table align="center">
  <tr>
-  <td><img src="../resources/images/C_MeteoStation.png" width="400"></td>
-  <td><img src="images/EEKYP3_System.png" width="400"></td>
+  <td><img src="../resources/images/C_MeteoStation.png" width="450"></td>
+  <td><img src="images/EEKYP3_System.png" width="500"></td>
   </tr>
 </table>
 
