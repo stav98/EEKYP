@@ -19,7 +19,7 @@
 <table align="center">
  <tr>
   <td><img src="images/EEKYP3_pcb_pinout.png" width="450"></td>
-  <td><img src="" width="500"></td>
+  <td><img src="images/EEKYP3_PCB2.jpg" width="400"></td>
   </tr>
 </table>
 
