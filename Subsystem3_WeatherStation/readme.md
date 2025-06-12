@@ -16,6 +16,13 @@
   <img src="schematics/EEKYP1.png" width="700">
 </p>
 
+<table align="center">
+ <tr>
+  <td><img src="images/EEKYP3_pcb_pinout.png" width="450"></td>
+  <td><img src="" width="500"></td>
+  </tr>
+</table>
+
 Αποτελείται από τα παρακάτω όργανα:
 
 ## Ανεμόμετρο
