@@ -77,7 +77,7 @@
 </table>
 
 <p align = "center">
-  <img src="images/WindVane_schematic.png" width="600">
+  <img src="images/WindVane_schematic.png" width="800">
 </p>
 
 ### Βαθμονόμηση
