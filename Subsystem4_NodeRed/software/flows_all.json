@@ -1,0 +1,4037 @@
+[
+    {
+        "id": "317ec4f.f7064bc",
+        "type": "tab",
+        "label": "Αυτόματο πότισμα",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "9b7305a50ad1f06b",
+        "type": "tab",
+        "label": "Φωτισμός - όργανα",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4de8b351d4436b87",
+        "type": "tab",
+        "label": "Φωτισμός - Γραμμή 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1f1b8fd355e4b803",
+        "type": "tab",
+        "label": "Φωτισμός - Γραμμή 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8abdc6670b74cd27",
+        "type": "tab",
+        "label": "Viber",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d8abde77.eb9ff",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "1a443bdc.bf4a7c",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Stavros",
+                "default": "#4B7930",
+                "baseColor": "#63daf8",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#63daf8",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#2ca2c9",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#171717",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#454545",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#68e4fd",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#828282",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#454545",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#fcfdfc",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#44b3f8",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#494949",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "13aa3c9da7522ec4",
+        "type": "chatbot-telegram-node",
+        "botname": "Bot",
+        "usernames": "",
+        "polling": "1000",
+        "store": "",
+        "log": "",
+        "debug": false,
+        "skipMediaFiles": false,
+        "webHook": "",
+        "connectMode": "polling"
+    },
+    {
+        "id": "28abe9f0c01cd954",
+        "type": "chatbot-viber-node",
+        "botname": "SmartHomeBot1",
+        "usernames": "",
+        "webHook": "https://iot.ekprevezas.mooo.com/redbot/viber",
+        "store": "",
+        "log": "",
+        "debug": false
+    },
+    {
+        "id": "cf2edef5474a6171",
+        "type": "ui_tab",
+        "name": "Αυτόματο πότισμα",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "82ae918ed58e5997",
+        "type": "ui_group",
+        "name": "Αισθητήρες",
+        "tab": "cf2edef5474a6171",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "28fa63e1595d8e1b",
+        "type": "ui_spacer",
+        "z": "317ec4f.f7064bc",
+        "name": "spacer",
+        "group": "82ae918ed58e5997",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7efb277c364350d7",
+        "type": "ui_spacer",
+        "z": "317ec4f.f7064bc",
+        "name": "spacer",
+        "group": "82ae918ed58e5997",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "523cb53d88c2d9df",
+        "type": "ui_group",
+        "name": "Ηλεκτροβάνες",
+        "tab": "cf2edef5474a6171",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8bc902e78fe24dd2",
+        "type": "ui_tab",
+        "name": "Φωτισμός",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "be6c1f2738c97054",
+        "type": "ui_group",
+        "name": "Αισθητήρες",
+        "tab": "8bc902e78fe24dd2",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7d7e6ca33a25f7f4",
+        "type": "ui_group",
+        "name": "Γραμμή 1",
+        "tab": "8bc902e78fe24dd2",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "417fe87e6031e36d",
+        "type": "ui_group",
+        "name": "Προγραμματισμός",
+        "tab": "cf2edef5474a6171",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "150516d9.b8a0a9",
+        "type": "ui_group",
+        "name": "HOME",
+        "tab": "5b51be56.a85e4",
+        "order": 1,
+        "disp": true,
+        "width": "9",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5b51be56.a85e4",
+        "type": "ui_tab",
+        "name": "ICONS",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "52d12e6e5720952f",
+        "type": "ui_group",
+        "name": "Γραμμή 2",
+        "tab": "8bc902e78fe24dd2",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9d78cd4ebb154371",
+        "type": "function",
+        "z": "317ec4f.f7064bc",
+        "name": "Θέσε τιμή 0",
+        "func": "msg.payload = 0;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1570,
+        "y": 1600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a5f3ca336b58b68f",
+        "type": "mqtt in",
+        "z": "317ec4f.f7064bc",
+        "name": "Κατάσταση Η/Β 1",
+        "topic": "EEKYP-1A/valve1_pub",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "d8abde77.eb9ff",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 520,
+        "wires": [
+            [
+                "6025923887b485c6"
+            ]
+        ]
+    },
+    {
+        "id": "6025923887b485c6",
+        "type": "ui_switch",
+        "z": "317ec4f.f7064bc",
+        "name": "Ηλεκτροβάνα 1",
+        "label": "Ηλεκτροβάνα 1",
+        "tooltip": "",
+        "group": "523cb53d88c2d9df",
+        "order": 7,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 480,
+        "y": 520,
+        "wires": [
+            [
+                "22f26bcd7f080886"
+            ]
+        ]
+    },
+    {
+        "id": "22f26bcd7f080886",
+        "type": "mqtt out",
+        "z": "317ec4f.f7064bc",
+        "name": "Αποστολή mqtt",
+        "topic": "EEKYP-1A/valve1_sub",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "d8abde77.eb9ff",
+        "x": 1160,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "7962e9226f4e1330",
+        "type": "mqtt in",
+        "z": "317ec4f.f7064bc",
+        "name": "Κατάσταση Η/Β 2",
+        "topic": "EEKYP-1A/valve2_pub",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "d8abde77.eb9ff",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 180,
+        "y": 620,
+        "wires": [
+            [
+                "8f05892bedd33bcc"
+            ]
+        ]
+    },
+    {
+        "id": "8f05892bedd33bcc",
+        "type": "ui_switch",
+        "z": "317ec4f.f7064bc",
+        "name": "Ηλεκτροβάνα 2",
+        "label": "Ηλεκτροβάνα 2",
+        "tooltip": "",
+        "group": "523cb53d88c2d9df",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 480,
+        "y": 620,
+        "wires": [
+            [
+                "3af198b4e3120090"
+            ]
+        ]
+    },
+    {
+        "id": "3af198b4e3120090",
+        "type": "mqtt out",
+        "z": "317ec4f.f7064bc",
+        "name": "Αποστολή mqtt",
+        "topic": "EEKYP-1A/valve2_sub",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "d8abde77.eb9ff",
+        "x": 1160,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "a631fab016876eaa",
+        "type": "mqtt in",
+        "z": "317ec4f.f7064bc",
+        "name": "Sensors",
+        "topic": "EEKYP-1A/data_pub",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d8abde77.eb9ff",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 260,
+        "wires": [
+            [
+                "1b04a9eb84b110f3",
+                "88d75932f973af6c",
+                "136f73640d56f930"
+            ]
+        ]
+    },
+    {
+        "id": "1b04a9eb84b110f3",
+        "type": "debug",
+        "z": "317ec4f.f7064bc",
+        "name": "debug 11",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 300,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "88d75932f973af6c",
+        "type": "split",
+        "z": "317ec4f.f7064bc",
+        "name": "",
+        "splt": ";",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 330,
+        "y": 260,
+        "wires": [
+            [
+                "efc6adf762321c9f"
+            ]
+        ]
+    },
+    {
+        "id": "efc6adf762321c9f",
+        "type": "change",
+        "z": "317ec4f.f7064bc",
+        "name": "To Number",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(msg.payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 260,
+        "wires": [
+            [
+                "e9f13996f45687d7"
+            ]
+        ]
+    },
+    {
+        "id": "f22a5ac3e1614579",
+        "type": "comment",
+        "z": "317ec4f.f7064bc",
+        "name": "Διαχωρισμός με ;",
+        "info": "",
+        "x": 320,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "5f6c5f3384ce5e2f",
+        "type": "comment",
+        "z": "317ec4f.f7064bc",
+        "name": "Μετατροπή σε αριθμό",
+        "info": "Μετατροπή από string σε αριθμούς",
+        "x": 540,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "e9f13996f45687d7",
+        "type": "switch",
+        "z": "317ec4f.f7064bc",
+        "name": "Route",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 5,
+        "x": 750,
+        "y": 260,
+        "wires": [
+            [
+                "63ce16f0721dbeab"
+            ],
+            [
+                "926134e4c1cc4dcc"
+            ],
+            [
+                "999c4da1e3c9368e"
+            ],
+            [
+                "ca0989bd07a2b709"
+            ],
+            [
+                "7f72f0a7dc6a41c7"
+            ]
+        ]
+    },
+    {
+        "id": "f37e583544910228",
+        "type": "comment",
+        "z": "317ec4f.f7064bc",
+        "name": "Δρομολογεί",
+        "info": "Βγάζει τα δεδομένα σε διαφορετική έξοδο.",
+        "x": 750,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "63ce16f0721dbeab",
+        "type": "change",
+        "z": "317ec4f.f7064bc",
+        "name": "Θερμοκρασία 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Θερμοκρασία 1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 160,
+        "wires": [
+            [
+                "6cbd2ecaf2b892d3"
+            ]
+        ]
+    },
+    {
+        "id": "6cbd2ecaf2b892d3",
+        "type": "ui_gauge",
+        "z": "317ec4f.f7064bc",
+        "name": "Θερμόμετρο 1",
+        "group": "82ae918ed58e5997",
+        "order": 2,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Θερμόμετρο 1",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-20",
+        "max": "60",
+        "colors": [
+            "#05d4f0",
+            "#08b40b",
+            "#ca3838"
+        ],
+        "seg1": "10",
+        "seg2": "30",
+        "className": "",
+        "x": 1180,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "999c4da1e3c9368e",
+        "type": "change",
+        "z": "317ec4f.f7064bc",
+        "name": "Υγρασία 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Υγρασία 1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 220,
+        "wires": [
+            [
+                "7b2df6d94c20d35e"
+            ]
+        ]
+    },
+    {
+        "id": "7b2df6d94c20d35e",
+        "type": "ui_gauge",
+        "z": "317ec4f.f7064bc",
+        "name": "Υγρόμετρο 1",
+        "group": "82ae918ed58e5997",
+        "order": 3,
+        "width": "3",
+        "height": "3",
+        "gtype": "wave",
+        "title": "Υγρόμετρο 1",
+        "label": "",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "10",
+        "colors": [
+            "#af5604",
+            "#08b40b",
+            "#3ce0ec"
+        ],
+        "seg1": "3",
+        "seg2": "8",
+        "className": "",
+        "x": 1170,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "926134e4c1cc4dcc",
+        "type": "change",
+        "z": "317ec4f.f7064bc",
+        "name": "Θερμοκρασία 2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Θερμοκρασία 1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 280,
+        "wires": [
+            [
+                "09c131662edbb0b8"
+            ]
+        ]
+    },
+    {
+        "id": "09c131662edbb0b8",
+        "type": "ui_gauge",
+        "z": "317ec4f.f7064bc",
+        "name": "Θερμόμετρο 2",
+        "group": "82ae918ed58e5997",
+        "order": 5,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Θερμόμετρο 2",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": "-20",
+        "max": "60",
+        "colors": [
+            "#05d4f0",
+            "#08b40b",
+            "#ca3838"
+        ],
+        "seg1": "10",
+        "seg2": "30",
+        "className": "",
+        "x": 1180,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "ca0989bd07a2b709",
+        "type": "change",
+        "z": "317ec4f.f7064bc",
+        "name": "Υγρασία 2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Υγρασία 2",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 920,
+        "y": 340,
+        "wires": [
+            [
+                "9a2779f05f33fd06"
+            ]
+        ]
+    },
+    {
+        "id": "9a2779f05f33fd06",
+        "type": "ui_gauge",
+        "z": "317ec4f.f7064bc",
+        "name": "Υγρόμετρο 2",
+        "group": "82ae918ed58e5997",
+        "order": 6,
+        "width": "3",
+        "height": "3",
+        "gtype": "wave",
+        "title": "Υγρόμετρο 2",
+        "label": "",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "10",
+        "colors": [
+            "#af5604",
+            "#08b40b",
+            "#3ce0ec"
+        ],
+        "seg1": "3",
+        "seg2": "8",
+        "className": "",
+        "x": 1170,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "7f72f0a7dc6a41c7",
+        "type": "change",
+        "z": "317ec4f.f7064bc",
+        "name": "Κατανάλωση",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Κατανάλωση",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 930,
+        "y": 400,
+        "wires": [
+            [
+                "331c2870f7abbaee"
+            ]
+        ]
+    },
+    {
+        "id": "331c2870f7abbaee",
+        "type": "ui_gauge",
+        "z": "317ec4f.f7064bc",
+        "name": "Κατανάλωση",
+        "group": "82ae918ed58e5997",
+        "order": 8,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Κατανάλωση",
+        "label": "lt/min",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "20",
+        "colors": [
+            "#38f005",
+            "#f9d10b",
+            "#f81b1b"
+        ],
+        "seg1": "10",
+        "seg2": "15",
+        "className": "",
+        "x": 1170,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "136f73640d56f930",
+        "type": "function",
+        "z": "317ec4f.f7064bc",
+        "name": "Ημερομηνία - Ώρα",
+        "func": "function addLZ(num, totalLength) {\n    return String(num).padStart(totalLength, '0');\n}\n\nvar d = new Date();\nvar n = d.getTimezoneOffset();\nvar t = d.getTime();\nvar sec = d.getSeconds();\nvar min = d.getMinutes();\nvar hour = d.getHours();\nvar date = d.getDate();\nvar month = d.getMonth() + 1;\nvar year = d.getFullYear();\nlet payload = addLZ(date, 2) + \"/\" + addLZ(month, 2) +\n    \"/\" + year + \"-\" + addLZ(hour, 2) + \":\" + addLZ(min, 2) +\n    \":\" + addLZ(sec, 2);\nmsg.payload = payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 200,
+        "wires": [
+            [
+                "57efd58a374e34eb"
+            ]
+        ]
+    },
+    {
+        "id": "57efd58a374e34eb",
+        "type": "ui_template",
+        "z": "317ec4f.f7064bc",
+        "group": "82ae918ed58e5997",
+        "name": "Τελευταία ενημέρωση",
+        "order": 1,
+        "width": "5",
+        "height": "2",
+        "format": "Τελευταία ενημέρωση:\n<div style=\"padding: 10px\">\n    <span class=\"box\">{{msg.payload}}</span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 640,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8ca5407138401d78",
+        "type": "ui_template",
+        "z": "317ec4f.f7064bc",
+        "group": "82ae918ed58e5997",
+        "name": "Εντολές CSS",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .box {\n        float: left;\n        padding: 2px;\n        width: 200px;\n        height: 25px;\n        line-height: 25px;\n        text-align: center;\n        margin: 5px 5px 5px 5px;\n        color: green;\n        background-color: lightblue;\n        border-radius: 5px;\n    }\n\n    .box1 {\n        float: left;\n        padding: 3px;\n        width: 100px;\n        height: 25px;\n        line-height: 25px;\n        text-align: center;\n        margin: 5px 5px 5px 5px;\n        color: green;\n        background-color: rgb(245, 250, 187);\n        border-radius: 5px;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 130,
+        "y": 60,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0f5340e67a3fb3bd",
+        "type": "ui_slider",
+        "z": "317ec4f.f7064bc",
+        "name": "Λεπτά",
+        "label": "Λεπτά",
+        "tooltip": "",
+        "group": "417fe87e6031e36d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "59",
+        "step": 1,
+        "className": "",
+        "x": 510,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ae0b130f5dbeac13",
+        "type": "ui_slider",
+        "z": "317ec4f.f7064bc",
+        "name": "Ώρα",
+        "label": "Ώρα",
+        "tooltip": "",
+        "group": "417fe87e6031e36d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "23",
+        "step": 1,
+        "className": "",
+        "x": 510,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "24f31a4d59f87445",
+        "type": "ui_dropdown",
+        "z": "317ec4f.f7064bc",
+        "name": "Συχνότητα",
+        "label": "Περίοδος",
+        "tooltip": "",
+        "place": "Select option",
+        "group": "417fe87e6031e36d",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "24 Ώρες",
+                "value": "24",
+                "type": "str"
+            },
+            {
+                "label": "2 ημέρες",
+                "value": "48",
+                "type": "str"
+            },
+            {
+                "label": "3 ημέρες",
+                "value": "52",
+                "type": "str"
+            }
+        ],
+        "payload": "",
+        "topic": "topic",
+        "topicType": "msg",
+        "className": "",
+        "x": 530,
+        "y": 860,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "553a3f573b6f8584",
+        "type": "ui_template",
+        "z": "317ec4f.f7064bc",
+        "group": "417fe87e6031e36d",
+        "name": "Ημέρες",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "format": "<span><input type=\"checkbox\" id=\"Monday\">&nbsp;Δευτέρα</span>\n<span><input type=\"checkbox\" id=\"Tuesday\">&nbsp;Τρίτη</span>\n<span><input type=\"checkbox\" id=\"Wednesday\">&nbsp;Τετάρτη</span>\n<span><input type=\"checkbox\" id=\"Thursday\">&nbsp;Πέμπτη</span>\n<span><input type=\"checkbox\" id=\"Friday\">&nbsp;Παρασκευή</span>\n<span><input type=\"checkbox\" id=\"Saturday\">&nbsp;Σάββατο</span>\n<span><input type=\"checkbox\" id=\"Sunday\">&nbsp;Κυριακή</span>\n\n<script>\n(function(scope) {\n \n  scope.$watch('msg', function(msg) {\n    if (msg) {\n        if(document.getElementById(\"checkbox_\"+scope.$id)){\n            document.getElementById(\"checkbox_\"+scope.$id).checked = msg.payload\n        }\n    }\n  });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 520,
+        "y": 900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "96740e6c55c6c570",
+        "type": "ui_template",
+        "z": "317ec4f.f7064bc",
+        "group": "417fe87e6031e36d",
+        "name": "HR2",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    hr {\n        display: block;\n        height: 1px;\n        border: 0;\n        border-top: 2px solid #ccc;\n        margin: 2px;\n        padding: 0;\n    }\n</style>\n\n<div style=\"padding-top: 7px\">\n    <div style=\"color: white; text-align: center\">Διάρκεια</div>\n    <hr>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 510,
+        "y": 980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "921d2319d42fbad2",
+        "type": "ui_slider",
+        "z": "317ec4f.f7064bc",
+        "name": "Λεπτά",
+        "label": "Λεπτά",
+        "tooltip": "",
+        "group": "417fe87e6031e36d",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "120",
+        "step": 1,
+        "className": "",
+        "x": 510,
+        "y": 1020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b7e7aeacd48c1f63",
+        "type": "mqtt in",
+        "z": "9b7305a50ad1f06b",
+        "name": "Sensors",
+        "topic": "EEKYP-2A/data_pub",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d8abde77.eb9ff",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 60,
+        "y": 280,
+        "wires": [
+            [
+                "a157cb03b1e2beb1",
+                "ae9bcc0cdee406b5",
+                "c52c1ae5ad5336f5"
+            ]
+        ]
+    },
+    {
+        "id": "a157cb03b1e2beb1",
+        "type": "split",
+        "z": "9b7305a50ad1f06b",
+        "name": "",
+        "splt": ";",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "64706dfa1d1633f8"
+            ]
+        ]
+    },
+    {
+        "id": "64706dfa1d1633f8",
+        "type": "change",
+        "z": "9b7305a50ad1f06b",
+        "name": "To Number",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "$number(msg.payload)",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 510,
+        "y": 280,
+        "wires": [
+            [
+                "1da0b0b53ab6f10f"
+            ]
+        ]
+    },
+    {
+        "id": "fd28f284c24dcabf",
+        "type": "comment",
+        "z": "9b7305a50ad1f06b",
+        "name": "Διαχωρισμός με ;",
+        "info": "(5) Δεδομένα\n=============\n1. Φως ημέρας 1\n2. Φως ημέρας 2\n3. Κατανάλωση ρεύματος AC\n4. Κατάσταση διακόπτη 1\n5. Κατάσταση διακόπτη 2",
+        "x": 300,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "98ea57c0a13cf08c",
+        "type": "comment",
+        "z": "9b7305a50ad1f06b",
+        "name": "Μετατροπή σε αριθμό",
+        "info": "Μετατροπή από string σε αριθμούς",
+        "x": 520,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "1da0b0b53ab6f10f",
+        "type": "switch",
+        "z": "9b7305a50ad1f06b",
+        "name": "Route",
+        "property": "parts.index",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "3",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "4",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "5",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
+        "x": 730,
+        "y": 280,
+        "wires": [
+            [
+                "0918678e26f714d4",
+                "5e852fbbc24a25cf"
+            ],
+            [
+                "eefefa6af344a635"
+            ],
+            [
+                "a7b49b02e84230f6",
+                "c03ed39f61ff79b4"
+            ],
+            [
+                "77bc430041e28eb2"
+            ],
+            [
+                "695ff1409a898745"
+            ],
+            [
+                "1b5447d985ede367"
+            ]
+        ]
+    },
+    {
+        "id": "0283c444276bd720",
+        "type": "comment",
+        "z": "9b7305a50ad1f06b",
+        "name": "Δρομολογεί",
+        "info": "Βγάζει τα δεδομένα σε διαφορετική έξοδο.",
+        "x": 730,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "0918678e26f714d4",
+        "type": "change",
+        "z": "9b7305a50ad1f06b",
+        "name": "Φως ημέρας 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Φως ημέρας 1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 160,
+        "wires": [
+            [
+                "97c4982ecf4eaa11"
+            ]
+        ]
+    },
+    {
+        "id": "97c4982ecf4eaa11",
+        "type": "ui_gauge",
+        "z": "9b7305a50ad1f06b",
+        "name": "Φως ημέρας 1",
+        "group": "be6c1f2738c97054",
+        "order": 6,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Φως ημέρας 1",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#0145b2",
+            "#07ed0b",
+            "#fbf428"
+        ],
+        "seg1": "25",
+        "seg2": "75",
+        "className": "",
+        "x": 1400,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "eefefa6af344a635",
+        "type": "change",
+        "z": "9b7305a50ad1f06b",
+        "name": "Φως ημέρας 2",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Φως ημέρας 2",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 220,
+        "wires": [
+            [
+                "dd871d539e8f3abf"
+            ]
+        ]
+    },
+    {
+        "id": "a7b49b02e84230f6",
+        "type": "change",
+        "z": "9b7305a50ad1f06b",
+        "name": "Ένταση ρεύματος",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Ένταση ρεύματος",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 990,
+        "y": 260,
+        "wires": [
+            [
+                "fcb5ecde47d96cf8"
+            ]
+        ]
+    },
+    {
+        "id": "fcb5ecde47d96cf8",
+        "type": "ui_gauge",
+        "z": "9b7305a50ad1f06b",
+        "name": "Ένταση ρεύματος",
+        "group": "be6c1f2738c97054",
+        "order": 8,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Ένταση ρεύματος",
+        "label": "Amps",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "5",
+        "colors": [
+            "#38f005",
+            "#f9d10b",
+            "#f81b1b"
+        ],
+        "seg1": "1",
+        "seg2": "4",
+        "className": "",
+        "x": 1410,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "ae9bcc0cdee406b5",
+        "type": "function",
+        "z": "9b7305a50ad1f06b",
+        "name": "Ημερομηνία - Ώρα",
+        "func": "function addLZ(num, totalLength) {\n    return String(num).padStart(totalLength, '0');\n}\n\nvar d = new Date();\nvar n = d.getTimezoneOffset();\nvar t = d.getTime();\nvar sec = d.getSeconds();\nvar min = d.getMinutes();\nvar hour = d.getHours();\nvar date = d.getDate();\nvar month = d.getMonth() + 1;\nvar year = d.getFullYear();\nlet payload = addLZ(date, 2) + \"/\" + addLZ(month, 2) +\n    \"/\" + year + \"-\" + addLZ(hour, 2) + \":\" + addLZ(min, 2) +\n    \":\" + addLZ(sec, 2);\nmsg.payload = payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 220,
+        "wires": [
+            [
+                "9d72b6496c75693f"
+            ]
+        ]
+    },
+    {
+        "id": "9d72b6496c75693f",
+        "type": "ui_template",
+        "z": "9b7305a50ad1f06b",
+        "group": "be6c1f2738c97054",
+        "name": "Τελευταία ενημέρωση",
+        "order": 5,
+        "width": "0",
+        "height": "0",
+        "format": "Τελευταία ενημέρωση:\n<div style=\"padding: 10px 5px 10px 50px\">\n    <span class=\"box\">{{msg.payload}}</span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 620,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd871d539e8f3abf",
+        "type": "ui_gauge",
+        "z": "9b7305a50ad1f06b",
+        "name": "Φως ημέρας 2",
+        "group": "be6c1f2738c97054",
+        "order": 7,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Φως ημέρας 2",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#0145b2",
+            "#07ed0b",
+            "#fbf428"
+        ],
+        "seg1": "25",
+        "seg2": "75",
+        "className": "",
+        "x": 1400,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c03ed39f61ff79b4",
+        "type": "function",
+        "z": "9b7305a50ad1f06b",
+        "name": "Υπολογισμός ισχύος",
+        "func": "let amps = msg.payload;\namps = parseFloat(amps).toFixed(2);\nlet w = parseFloat(amps * 230).toFixed(2);\nmsg.payload = w;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1000,
+        "y": 300,
+        "wires": [
+            [
+                "aa87cfb900bb583e"
+            ]
+        ]
+    },
+    {
+        "id": "aa87cfb900bb583e",
+        "type": "change",
+        "z": "9b7305a50ad1f06b",
+        "name": "Ισχύς",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Ισχύς",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1230,
+        "y": 320,
+        "wires": [
+            [
+                "5dcb9984c93311cd"
+            ]
+        ]
+    },
+    {
+        "id": "5dcb9984c93311cd",
+        "type": "ui_gauge",
+        "z": "9b7305a50ad1f06b",
+        "name": "Ισχύς",
+        "group": "be6c1f2738c97054",
+        "order": 9,
+        "width": "3",
+        "height": "3",
+        "gtype": "gage",
+        "title": "Ισχύς",
+        "label": "W",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "1000",
+        "colors": [
+            "#38f005",
+            "#f9d10b",
+            "#f81b1b"
+        ],
+        "seg1": "250",
+        "seg2": "750",
+        "className": "",
+        "x": 1370,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "065b7de6160573a5",
+        "type": "ui_template",
+        "z": "9b7305a50ad1f06b",
+        "group": "be6c1f2738c97054",
+        "name": "Εντολές CSS",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .box {\n        float: left;\n        padding: 2px;\n        width: 200px;\n        height: 25px;\n        line-height: 25px;\n        text-align: center;\n        margin: 5px 5px 5px 5px;\n        color: green;\n        background-color: lightblue;\n        border-radius: 5px;\n    }\n\n    .box1 {\n        float: left;\n        padding: 3px;\n        width: 100px;\n        height: 25px;\n        line-height: 25px;\n        text-align: center;\n        margin: 5px 5px 5px 5px;\n        color: green;\n        background-color: rgb(245, 250, 187);\n        border-radius: 5px;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c52c1ae5ad5336f5",
+        "type": "debug",
+        "z": "9b7305a50ad1f06b",
+        "name": "Τιμές για έλεγχο",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "1b5447d985ede367",
+        "type": "ui_level",
+        "z": "9b7305a50ad1f06b",
+        "group": "be6c1f2738c97054",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "Ένταση σήματος WiFi",
+        "label": "WiFi RSSI",
+        "colorHi": "#32de02",
+        "colorWarn": "#ff9900",
+        "colorNormal": "#f51000",
+        "colorOff": "#595959",
+        "min": "-90",
+        "max": "-45",
+        "segWarn": "-75",
+        "segHigh": "-60",
+        "unit": "dBm",
+        "layout": "sh",
+        "channelA": "",
+        "channelB": "",
+        "decimals": 0,
+        "animations": "soft",
+        "shape": 2,
+        "colorschema": "fixed",
+        "textoptions": "default",
+        "colorText": "#eeeeee",
+        "fontLabel": "",
+        "fontValue": "",
+        "fontSmall": "",
+        "colorFromTheme": true,
+        "textAnimations": false,
+        "hideValue": false,
+        "tickmode": "off",
+        "peakmode": false,
+        "property": "payload",
+        "peaktime": 3000,
+        "x": 1440,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "df72cf79574a01e7",
+        "type": "inject",
+        "z": "9b7305a50ad1f06b",
+        "name": "On",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "21.2;18.3;0.00;0;0;-44",
+        "payloadType": "str",
+        "x": 230,
+        "y": 420,
+        "wires": [
+            [
+                "a157cb03b1e2beb1",
+                "ae9bcc0cdee406b5"
+            ]
+        ]
+    },
+    {
+        "id": "7bab8c082de89c4b",
+        "type": "inject",
+        "z": "9b7305a50ad1f06b",
+        "name": "Off",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "70.2;18.3;0.00;1;0;-44",
+        "payloadType": "str",
+        "x": 230,
+        "y": 480,
+        "wires": [
+            [
+                "a157cb03b1e2beb1",
+                "ae9bcc0cdee406b5"
+            ]
+        ]
+    },
+    {
+        "id": "f695636806c42e5c",
+        "type": "ui_digital_display",
+        "z": "9b7305a50ad1f06b",
+        "name": "Time",
+        "group": "be6c1f2738c97054",
+        "order": 2,
+        "width": "2",
+        "height": "1",
+        "digits": "4",
+        "decimals": "2",
+        "x": 570,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "cc9eda2419587f77",
+        "type": "function",
+        "z": "9b7305a50ad1f06b",
+        "name": "Μετατροπή",
+        "func": "function addLZ(num, totalLength) {\n    return String(num).padStart(totalLength, '0');\n}\n\nvar d = new Date();\n\nvar min = d.getMinutes();\nvar hour = d.getHours();\n\nlet payload = addLZ(hour, 2)+ \".\" + addLZ(min, 2);\nmsg.payload = payload;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 80,
+        "wires": [
+            [
+                "f695636806c42e5c"
+            ]
+        ]
+    },
+    {
+        "id": "269beb8ff03f1716",
+        "type": "inject",
+        "z": "9b7305a50ad1f06b",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 90,
+        "y": 80,
+        "wires": [
+            [
+                "cc9eda2419587f77"
+            ]
+        ]
+    },
+    {
+        "id": "fb12be3a9a71fb75",
+        "type": "ui_text",
+        "z": "9b7305a50ad1f06b",
+        "group": "be6c1f2738c97054",
+        "order": 1,
+        "width": "4",
+        "height": "1",
+        "name": "",
+        "label": "Ώρα διακομιστή:",
+        "format": "{{msg.payload}}",
+        "layout": "row-right",
+        "className": "",
+        "x": 600,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "77bc430041e28eb2",
+        "type": "link out",
+        "z": "9b7305a50ad1f06b",
+        "name": "Κατάσταση Διακόπτη 1",
+        "mode": "link",
+        "links": [
+            "d257652fcd652bea"
+        ],
+        "x": 1355,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "5e852fbbc24a25cf",
+        "type": "link out",
+        "z": "9b7305a50ad1f06b",
+        "name": "LDR1",
+        "mode": "link",
+        "links": [
+            "04a1ccc1fd3d565c"
+        ],
+        "x": 925,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "695ff1409a898745",
+        "type": "link out",
+        "z": "9b7305a50ad1f06b",
+        "name": "Κατάσταση διακόπτη 2",
+        "mode": "link",
+        "links": [
+            "30d87840b62f770d"
+        ],
+        "x": 1355,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "d257652fcd652bea",
+        "type": "link in",
+        "z": "4de8b351d4436b87",
+        "name": "Κατάσταση Διακόπτη 1",
+        "links": [
+            "77bc430041e28eb2"
+        ],
+        "x": 55,
+        "y": 380,
+        "wires": [
+            [
+                "edaba7ff8fbd8527"
+            ]
+        ]
+    },
+    {
+        "id": "a61eb20f965970aa",
+        "type": "mqtt in",
+        "z": "4de8b351d4436b87",
+        "name": "Κατάσταση Διακόπτη 1",
+        "topic": "EEKYP-2A/switch1_stat",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "d8abde77.eb9ff",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 480,
+        "wires": [
+            [
+                "8ed1a2854c97074d",
+                "b740f1c4361119e0"
+            ]
+        ]
+    },
+    {
+        "id": "8ed1a2854c97074d",
+        "type": "ui_switch",
+        "z": "4de8b351d4436b87",
+        "name": "Διακόπτης 1",
+        "label": "Χειροκίνητα",
+        "tooltip": "Χειροκίνητη αλλαγή",
+        "group": "7d7e6ca33a25f7f4",
+        "order": 1,
+        "width": "5",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "payload",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 590,
+        "y": 520,
+        "wires": [
+            [
+                "cef101abd5029091"
+            ]
+        ]
+    },
+    {
+        "id": "cef101abd5029091",
+        "type": "mqtt out",
+        "z": "4de8b351d4436b87",
+        "name": "Αποστολή mqtt",
+        "topic": "EEKYP-2A/switch1_cmd",
+        "qos": "",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "d8abde77.eb9ff",
+        "x": 1800,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "f5da59c57fb62977",
+        "type": "comment",
+        "z": "4de8b351d4436b87",
+        "name": "Retained",
+        "info": "Τα μηνύματα είναι retain ώστε όταν \nσυνδέεται ένα client να διαβάζει τις\nτελευταίες τιμές που έχουν τεθεί στο\ntopic.",
+        "x": 1820,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "edaba7ff8fbd8527",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Περιοδικός έλεγχος κατάστασης",
+        "func": "let a = msg.payload;\nlet s = \"\";\nif (a == 1)\n    s = \"on\";\nelse\n    s = \"off\";\nmsg.payload = s;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 380,
+        "wires": [
+            [
+                "8ed1a2854c97074d"
+            ]
+        ]
+    },
+    {
+        "id": "209f5ee098a435f1",
+        "type": "ui_slider",
+        "z": "4de8b351d4436b87",
+        "name": "Πότε θα ανάβει",
+        "label": "Ανάβει",
+        "tooltip": "Από αυτή την τιμή και κάτω ανάβει.",
+        "group": "7d7e6ca33a25f7f4",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "50",
+        "step": 1,
+        "className": "",
+        "x": 1340,
+        "y": 660,
+        "wires": [
+            [
+                "0d4089b2ed47a4ce",
+                "7ddd0df07fac0e26"
+            ]
+        ]
+    },
+    {
+        "id": "4d2420c6563f824e",
+        "type": "inject",
+        "z": "4de8b351d4436b87",
+        "name": "Ξεκίνημα",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 120,
+        "y": 660,
+        "wires": [
+            [
+                "cc9e9cba6d3bdeb6"
+            ]
+        ]
+    },
+    {
+        "id": "cc9e9cba6d3bdeb6",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αρχικοποίηση auto",
+        "func": "var payload = msg.payload;\n//Αν δεν έχει τεθεί η τιμή βάλε το payload που είναι false\nvar L1_auto = flow.get('L1_auto') || payload;\nmsg.payload = L1_auto;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 660,
+        "wires": [
+            [
+                "aba9662b94b3834b"
+            ]
+        ]
+    },
+    {
+        "id": "aba9662b94b3834b",
+        "type": "ui_switch",
+        "z": "4de8b351d4436b87",
+        "name": "",
+        "label": "Αυτόματα",
+        "tooltip": "Πατήστε για αυτόματη λειτουργία",
+        "group": "7d7e6ca33a25f7f4",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 500,
+        "y": 660,
+        "wires": [
+            [
+                "826404588c92a530",
+                "cd94c92cdcfc6f4b"
+            ]
+        ]
+    },
+    {
+        "id": "826404588c92a530",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αποθήκευσε τιμή auto",
+        "func": "/* Αποθηκεύει τιμή auto και μεταδίδει την ιδιότητα\nenabled στο επόμενο control σύμφωνα με την θέση\nτου προηγούμενου διακόπτη */\nmsg.enabled = false; //Αρχικά απενεργοποιημένο\nif (msg.payload == true) //Αν ήταν true\n    msg.enabled = true; //Να ενεργοποιήσει τα επόμενα controls\nflow.set('L1_auto', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 660,
+        "wires": [
+            [
+                "1bb4eea9a196c209",
+                "4f2d404968917e9e",
+                "25a0a66b16e314d8"
+            ]
+        ]
+    },
+    {
+        "id": "1bb4eea9a196c209",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αρχικοποίησε τιμή σκότους",
+        "func": "msg.payload = flow.get('L1_dark') || 15;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 660,
+        "wires": [
+            [
+                "209f5ee098a435f1"
+            ]
+        ]
+    },
+    {
+        "id": "0d4089b2ed47a4ce",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αποθήκευσε τιμή σκότους",
+        "func": "var L1_dark = msg.payload;\nflow.set('L1_dark', L1_dark);",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f2d404968917e9e",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αρχικοποίησε τιμή φωτός",
+        "func": "msg.payload = flow.get('L1_Light') || 50;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 800,
+        "wires": [
+            [
+                "664459c5bcb8841c"
+            ]
+        ]
+    },
+    {
+        "id": "664459c5bcb8841c",
+        "type": "ui_slider",
+        "z": "4de8b351d4436b87",
+        "name": "Πότε θα σβήνει",
+        "label": "Σβήνει",
+        "tooltip": "Από αυτή την τιμή και πάνω σβήνει.",
+        "group": "7d7e6ca33a25f7f4",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 1340,
+        "y": 800,
+        "wires": [
+            [
+                "97909eaf8ddc0257"
+            ]
+        ]
+    },
+    {
+        "id": "97909eaf8ddc0257",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αποθήκευσε τιμή φωτός",
+        "func": "var L1_Light = msg.payload;\nflow.set('L1_Light', L1_Light);",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2abad0b44602a40",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αυτόματο άναμα",
+        "func": "var L1_dark = flow.get('L1_dark'); //τιμή σκότους\nvar L1_auto = flow.get('L1_auto'); //Ενεργ. το auto\nvar L1_timer = flow.get('L1_timer'); //Ενεργ. το timer\n\n//Αν είναι στο αυτόματο χωρίς χρονιστή σβησίματος\n//και αν η τιμή του αισθητήρα έπεσε κάτω από το χαμηλό όριο σκότους\nif (msg.payload <= L1_dark && L1_auto === true && L1_timer === false)\n    msg.payload = \"on\"; //Άναψε τα φώτα\n//Διαφορετικά μην στέλνεις τίποτα\nelse\n    msg.payload = \"\";\n//Αν υπάρχει φορτίο μόνο τότε στείλε στο επόμενο\nif (msg.payload !== \"\")\n    return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 160,
+        "wires": [
+            [
+                "cef101abd5029091"
+            ]
+        ]
+    },
+    {
+        "id": "becaa3a03186e672",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αυτόματο σβήσιμο",
+        "func": "var L1_Light = flow.get('L1_Light'); //Τιμή για φως ημέρας από ποτενσιόμετρο\nvar L1_auto = flow.get('L1_auto'); //Ενεργοποιημένο το αυτόματο\nvar L1_timer = flow.get('L1_timer'); //Είναι ενεργοποιημένο το σβήσιμο με χρόνο\nvar L1_flag = flow.get('L1_flag');\n\n//Αν είναι στο αυτόματο χωρίς χρόνο σβησίματος\n//και αν η τιμή του αισθητήρα ξεπέρασε την τιμή ημέρας\nif (msg.payload >= L1_Light && L1_auto == true && L1_timer == false)\n    msg.payload = \"off\"; //Σβήσε\n//Διαφορετικά μην στέλνεις τίποτα\nelse\n    msg.payload = \"\";\n//Αν υπάρχει φορτίο μόνο τότε στείλε στο επόμενο\nif (msg.payload !== \"\")\n    return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 220,
+        "wires": [
+            [
+                "cef101abd5029091"
+            ]
+        ]
+    },
+    {
+        "id": "ef4bc85129810957",
+        "type": "comment",
+        "z": "4de8b351d4436b87",
+        "name": "Περιοδικές τιμές από αισθητήρα",
+        "info": "Συνήθως κάθε 1 λεπτό",
+        "x": 350,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "7ddd0df07fac0e26",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Τροποποίησε ελάχιστη τιμή",
+        "func": "var a = msg.payload;\n//msg.min = 100 - a;\nmsg = {\n    ui_control: {\n        min: a + 1\n    }\n}\n//msg.payload = msg.payload.min + 1;\n    return msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 720,
+        "wires": [
+            [
+                "664459c5bcb8841c"
+            ]
+        ]
+    },
+    {
+        "id": "b04d79cc1abe106b",
+        "type": "ui_switch",
+        "z": "4de8b351d4436b87",
+        "name": "En Timer",
+        "label": "Ενεργοποίηση Χρονοδιακόπτη",
+        "tooltip": "Πατήστε για ενεργοποίηση του χρονοδιακόπτη",
+        "group": "7d7e6ca33a25f7f4",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 500,
+        "y": 880,
+        "wires": [
+            [
+                "e17aef37886a6207"
+            ]
+        ]
+    },
+    {
+        "id": "cd94c92cdcfc6f4b",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αρχικοποίησε timer",
+        "func": "var L1_timer = flow.get('L1_timer') || false;\nmsg.enabled = false;\nif (msg.payload == true)\n    msg.enabled = true;\nmsg.payload = L1_timer;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 880,
+        "wires": [
+            [
+                "b04d79cc1abe106b"
+            ]
+        ]
+    },
+    {
+        "id": "e17aef37886a6207",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αποθήκευσε κατάσταση timer",
+        "func": "/* Αποθηκεύει τιμή timer enable και μεταδίδει την \nιδιότητα enabled στο επόμενο control σύμφωνα με την \nθέση του προηγούμενου διακόπτη */\nvar L1_auto = flow.get('L1_auto');\n//node.warn(L1_auto); //Debug\nflow.set('L1_timer', msg.payload);\nmsg.enabled = false;\n//Αν το timer enable είναι true και είναι σε auto\nif (msg.payload == true && L1_auto == true)\n    msg.enabled = true; //τότε να ανάψει η επιλογή χρόνου\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 880,
+        "wires": [
+            [
+                "c7d81d5be79d0ed3",
+                "c8f6f8ee5f907a74",
+                "c72e877bb3de3ad4"
+            ]
+        ]
+    },
+    {
+        "id": "41365cd3bc740b6a",
+        "type": "ui_time_scheduler",
+        "z": "4de8b351d4436b87",
+        "group": "7d7e6ca33a25f7f4",
+        "name": "Χρονοδιακόπτης",
+        "startDay": "1",
+        "refresh": "10",
+        "devices": [
+            "Χρονοδιακόπτης"
+        ],
+        "singleOff": false,
+        "onlySendChange": false,
+        "customPayload": false,
+        "eventMode": false,
+        "eventOptions": [],
+        "sendTopic": false,
+        "lat": "",
+        "lon": "",
+        "customContextStore": "",
+        "outputs": 2,
+        "order": 8,
+        "width": "6",
+        "height": "1",
+        "x": 1320,
+        "y": 1020,
+        "wires": [
+            [
+                "d6e28846238f1c80"
+            ],
+            [
+                "1a2e9b0f66c81d27"
+            ]
+        ]
+    },
+    {
+        "id": "b3e70d73a405da31",
+        "type": "inject",
+        "z": "4de8b351d4436b87",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 880,
+        "y": 1020,
+        "wires": [
+            [
+                "c7d81d5be79d0ed3"
+            ]
+        ]
+    },
+    {
+        "id": "c7d81d5be79d0ed3",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Φόρτωσε αρχικές τιμές ",
+        "func": "var L1_chron = flow.get('L1_chron') || '{\"timers\":[{\"starttime\":1748097000000,\"days\":[0,1,1,1,1,1,0],\"output\":\"0\",\"endtime\":1748115000000}],\"settings\":{\"disabledDevices\":[]}}'; \nmsg.payload = L1_chron;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 1020,
+        "wires": [
+            [
+                "41365cd3bc740b6a"
+            ]
+        ]
+    },
+    {
+        "id": "d6e28846238f1c80",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αποθήκευσε τιμές χρόνου σβισήματος",
+        "func": "var L1_chron = msg.payload;\nflow.set('L1_chron', L1_chron);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 1000,
+        "wires": [
+            [
+                "bf099ed41ed83083"
+            ]
+        ]
+    },
+    {
+        "id": "7aa40929d985ca9f",
+        "type": "comment",
+        "z": "4de8b351d4436b87",
+        "name": "Payload",
+        "info": "",
+        "x": 1360,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "cbf914606023c605",
+        "type": "comment",
+        "z": "4de8b351d4436b87",
+        "name": "Json τοποθέτησης τιμών χρόνου",
+        "info": "",
+        "x": 1670,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "1a2e9b0f66c81d27",
+        "type": "change",
+        "z": "4de8b351d4436b87",
+        "name": "Μετατροπή topic & payload",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "bool",
+                "to": "off",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "on",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "timerL1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1320,
+        "y": 920,
+        "wires": [
+            [
+                "d89b22601375cbd7"
+            ]
+        ]
+    },
+    {
+        "id": "daadfbe38a9e05e7",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αυτόματη λειτουργία χρονιστή, αισθητήρα",
+        "func": "var L1_dark = flow.get('L1_dark'); //τιμή σκότους\nvar L1_Light = flow.get('L1_Light'); //Τιμή για φως ημέρας από ποτενσιόμετρο\nvar L1_auto = flow.get('L1_auto'); //Ενεργοποιημένο το αυτόματο\nvar L1_timer = flow.get('L1_timer'); //Είναι ενεργοποιημένο το σβήσιμο με χρόνο\nvar L1_ignore = flow.get('L1_ignore')\n\nif (L1_auto === true && L1_timer === true && msg.payload.timerL1 == \"on\" \n    && L1_ignore == false && msg.payload.sensL1 <= L1_dark)\n    {\n     msg.payload = \"on\";\n     return msg;\n    }\nif (L1_auto === true && L1_timer === true && msg.payload.timerL1 == \"on\"\n    && L1_ignore == true) \n    {\n     msg.payload = \"on\";\n     return msg;\n    }\nelse if (L1_auto === true && L1_timer === true && msg.payload.timerL1 == \"on\"\n    && L1_ignore == false && msg.payload.sensL1 >= L1_Light) \n    {\n     msg.payload = \"off\";\n     return msg;\n    }\nelse if (L1_auto === true && L1_timer === true && msg.payload.timerL1 == \"off\") \n    {\n     msg.payload = \"off\";\n     return msg;\n    }",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 520,
+        "wires": [
+            [
+                "cef101abd5029091"
+            ]
+        ]
+    },
+    {
+        "id": "d2993d680244f138",
+        "type": "change",
+        "z": "4de8b351d4436b87",
+        "name": "Μετατροπή topic",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "sensL1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 380,
+        "wires": [
+            [
+                "d89b22601375cbd7"
+            ]
+        ]
+    },
+    {
+        "id": "d89b22601375cbd7",
+        "type": "join",
+        "z": "4de8b351d4436b87",
+        "name": "Ένωση μηνυμάτων",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1330,
+        "y": 580,
+        "wires": [
+            [
+                "daadfbe38a9e05e7"
+            ]
+        ]
+    },
+    {
+        "id": "25a0a66b16e314d8",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Invert Enabled",
+        "func": "var payload = msg.payload;\nmsg.enabled = true;\nif (payload == true)\n    msg.enabled = false;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 580,
+        "wires": [
+            [
+                "8ed1a2854c97074d"
+            ]
+        ]
+    },
+    {
+        "id": "c8f6f8ee5f907a74",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Invert Enabled",
+        "func": "var payload = msg.payload;\nmsg.enabled = true;\nif (payload == true)\n    msg.enabled = false;\nif (flow.get('L1_auto') == false)\n    msg.enabled = false;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1da3ac97f46007a8",
+        "type": "comment",
+        "z": "4de8b351d4436b87",
+        "name": "Αυτόματα μετά από 0,1sec",
+        "info": "",
+        "x": 150,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "348611d7f3060806",
+        "type": "inject",
+        "z": "4de8b351d4436b87",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 1070,
+        "y": 900,
+        "wires": [
+            [
+                "1a2e9b0f66c81d27"
+            ]
+        ]
+    },
+    {
+        "id": "53b95e28f719ced9",
+        "type": "inject",
+        "z": "4de8b351d4436b87",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 1070,
+        "y": 940,
+        "wires": [
+            [
+                "1a2e9b0f66c81d27"
+            ]
+        ]
+    },
+    {
+        "id": "758d1547e1d981c9",
+        "type": "ui_template",
+        "z": "4de8b351d4436b87",
+        "group": "7d7e6ca33a25f7f4",
+        "name": "LED",
+        "order": 2,
+        "width": "1",
+        "height": "1",
+        "format": "<style>\n    .led {\n        float: right;\n        padding: 1px;\n        width: 20px;\n        height: 20px;\n        /*margin: 5px 5px 5px 5px;*/\n        margin: 5px;\n        border-radius: 50%;\n    }\n</style>\n\n<div style=\"padding-top: 3px\" title=\"Ανοίγει\">\n    <span class=\"led\" style=\"background-color: {{msg.payload}}; box-shadow: black 0 -1px 1px 0px, inset black 0 -1px 4px, {{msg.payload}} 0 3px 18px;\"></span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 590,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b740f1c4361119e0",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Μετατροπή",
+        "func": "if (msg.payload == \"on\")\n    msg.payload = \"#fc3223\"; //\"#36e5f5\";\nelse\n    msg.payload = \"#300401\"; //\"#112b63\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 460,
+        "wires": [
+            [
+                "758d1547e1d981c9"
+            ]
+        ]
+    },
+    {
+        "id": "ce6840bf0de9bbc3",
+        "type": "ui_switch",
+        "z": "4de8b351d4436b87",
+        "name": "Ignore LDR",
+        "label": "Αγνόησε αισθητήρα",
+        "tooltip": "Λειτουργεί μόνο με τον χρονοδιακόπτη και αγνοεί αν νύχτωσε ή ξημέρωσε",
+        "group": "7d7e6ca33a25f7f4",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 970,
+        "y": 1160,
+        "wires": [
+            [
+                "e329d9104a67d8c7"
+            ]
+        ]
+    },
+    {
+        "id": "c72e877bb3de3ad4",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αρχικοποίησε Ignore LDR",
+        "func": "var L1_ignore = flow.get('L1_ignore') || false;\n\nvar L1_auto = flow.get('L1_auto');\n\nmsg.enabled = false;\nif (msg.payload == true && L1_auto == true)\n    msg.enabled = true;\nmsg.payload = L1_ignore;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 1160,
+        "wires": [
+            [
+                "ce6840bf0de9bbc3"
+            ]
+        ]
+    },
+    {
+        "id": "e329d9104a67d8c7",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αποθήκευσε κατάσταση Ignore LDR",
+        "func": "/* Αποθηκεύει τιμή timer enable και μεταδίδει την \nιδιότητα enabled στο επόμενο control σύμφωνα με την \nθέση του προηγούμενου διακόπτη */\nvar L1_timer = flow.get('L1_timer');\n//node.warn(L1_auto); //Debug\nflow.set('L1_ignore', msg.payload);\nmsg.enabled = false;\n//Αν το timer enable είναι true και είναι σε auto\nif (msg.payload == true && L1_timer == true)\n    msg.enabled = true; //τότε να ανάψει η επιλογή χρόνου\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 1160,
+        "wires": [
+            [
+                "db967e8baaabc80a"
+            ]
+        ]
+    },
+    {
+        "id": "db967e8baaabc80a",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Invert Enabled",
+        "func": "var payload = msg.payload;\nmsg.enabled = true;\nif (payload == true)\n    msg.enabled = false;\nif (flow.get('L1_auto') == false)\n    msg.enabled = false;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 1160,
+        "wires": [
+            [
+                "1bb4eea9a196c209",
+                "4f2d404968917e9e"
+            ]
+        ]
+    },
+    {
+        "id": "04a1ccc1fd3d565c",
+        "type": "link in",
+        "z": "4de8b351d4436b87",
+        "name": "LDR1",
+        "links": [
+            "5e852fbbc24a25cf"
+        ],
+        "x": 55,
+        "y": 220,
+        "wires": [
+            [
+                "f2abad0b44602a40",
+                "becaa3a03186e672",
+                "d2993d680244f138"
+            ]
+        ]
+    },
+    {
+        "id": "bf099ed41ed83083",
+        "type": "debug",
+        "z": "4de8b351d4436b87",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1940,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "f08904e67530b9ac",
+        "type": "mqtt in",
+        "z": "1f1b8fd355e4b803",
+        "name": "Κατάσταση Διακόπτη 2",
+        "topic": "EEKYP-2A/switch2_stat",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "d8abde77.eb9ff",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 220,
+        "y": 340,
+        "wires": [
+            [
+                "62a8d0c3bf4fc3ba"
+            ]
+        ]
+    },
+    {
+        "id": "62a8d0c3bf4fc3ba",
+        "type": "ui_switch",
+        "z": "1f1b8fd355e4b803",
+        "name": "Διακόπτης 2",
+        "label": "Γραμμή 2",
+        "tooltip": "",
+        "group": "52d12e6e5720952f",
+        "order": 9,
+        "width": "0",
+        "height": "0",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "payload",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 570,
+        "y": 340,
+        "wires": [
+            [
+                "c7a580295b0abf35"
+            ]
+        ]
+    },
+    {
+        "id": "c7a580295b0abf35",
+        "type": "mqtt out",
+        "z": "1f1b8fd355e4b803",
+        "name": "Αποστολή mqtt",
+        "topic": "EEKYP-2A/switch2_cmd",
+        "qos": "",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "d8abde77.eb9ff",
+        "x": 1440,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "6738eb6d734353e5",
+        "type": "function",
+        "z": "1f1b8fd355e4b803",
+        "name": "Περιοδικός έλεγχος κατάστασης",
+        "func": "let a = msg.payload;\nlet s = \"\";\nif (a == 1)\n    s = \"on\";\nelse\n    s = \"off\";\nmsg.payload = s;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 280,
+        "wires": [
+            [
+                "62a8d0c3bf4fc3ba"
+            ]
+        ]
+    },
+    {
+        "id": "30d87840b62f770d",
+        "type": "link in",
+        "z": "1f1b8fd355e4b803",
+        "name": "Κατάσταση διακόπτη 2",
+        "links": [
+            "695ff1409a898745"
+        ],
+        "x": 35,
+        "y": 280,
+        "wires": [
+            [
+                "6738eb6d734353e5"
+            ]
+        ]
+    },
+    {
+        "id": "9face1acb46320c6",
+        "type": "chatbot-viber-receive",
+        "z": "8abdc6670b74cd27",
+        "bot": "28abe9f0c01cd954",
+        "botProduction": "",
+        "x": 100,
+        "y": 160,
+        "wires": [
+            [
+                "3e2c66afc288bde8"
+            ]
+        ]
+    },
+    {
+        "id": "3e2c66afc288bde8",
+        "type": "chatbot-rules",
+        "z": "8abdc6670b74cd27",
+        "name": "Αποδεκτές εντολές",
+        "rules": [
+            {
+                "type": "command",
+                "command": "/status"
+            },
+            {
+                "type": "command",
+                "command": "/help"
+            },
+            {
+                "type": "command",
+                "command": "/register"
+            },
+            {
+                "type": "command",
+                "command": "/unregister"
+            },
+            {
+                "type": "catchAll"
+            }
+        ],
+        "outputs": 5,
+        "x": 330,
+        "y": 160,
+        "wires": [
+            [
+                "3a79053af44f9a11"
+            ],
+            [
+                "64687fc5ef261872"
+            ],
+            [
+                "34ef8615754f23dc",
+                "b83d23a1a65188b3"
+            ],
+            [
+                "605f860a8c127abe",
+                "1823cabeebd2b4cc"
+            ],
+            [
+                "64687fc5ef261872"
+            ]
+        ]
+    },
+    {
+        "id": "3a79053af44f9a11",
+        "type": "function",
+        "z": "8abdc6670b74cd27",
+        "name": "Δημιουργία μηνύματος",
+        "func": "let temp1 = flow.get('Temp1') || \"\";\nlet thermosif = flow.get('Thermosif') || \"\";\nlet humid = flow.get('Humid') || \"\";\nlet irrad = flow.get('Irrad') || \"\";\nlet windir = flow.get('WindDir') || \"\";\nlet windstrength = flow.get('WindStrength') || \"\";\nmsg.payload = \"Κατάσταση Ταράτσας\\n\";\nmsg.payload += \"==================\\n\";\nmsg.payload += \"Εξωτερ. Θερμοκρασία: \" + temp1 + \"°C\\n\";\nmsg.payload += \"Θερμοσίφωνας: \" + thermosif + \"°C\\n\";\nmsg.payload += \"Υγρασία: \" + humid + \"%\\n\";\nmsg.payload += \"Εντ. Ηλιακής ακτινοβ.: \" + irrad + \"W/m²\\n\";\nmsg.payload += \"Κατεύθυνση ανέμου: \" + windir + \"°\\n\";\nmsg.payload += \"Έντ. ανέμου: \" + windstrength + \"Km/h\\n\";\nmsg.payload += \"Περισσότερα στο https://iot.ekprevezas.mooo.com/ui\\n\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 660,
+        "y": 140,
+        "wires": [
+            [
+                "4e19004a9606e116"
+            ]
+        ]
+    },
+    {
+        "id": "4e19004a9606e116",
+        "type": "chatbot-message",
+        "z": "8abdc6670b74cd27",
+        "name": "",
+        "message": [
+            ""
+        ],
+        "language": "none",
+        "x": 1010,
+        "y": 140,
+        "wires": [
+            [
+                "0777c350ef36db9f"
+            ]
+        ]
+    },
+    {
+        "id": "0777c350ef36db9f",
+        "type": "chatbot-viber-send",
+        "z": "8abdc6670b74cd27",
+        "bot": "28abe9f0c01cd954",
+        "botProduction": "",
+        "track": false,
+        "passThrough": false,
+        "outputs": 0,
+        "x": 2290,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "64687fc5ef261872",
+        "type": "chatbot-message",
+        "z": "8abdc6670b74cd27",
+        "name": "Βοήθεια",
+        "message": [
+            {
+                "message": "Διαθέσιμες εντολές:\n/status\n/register\n/unregister\n/help"
+            }
+        ],
+        "language": "none",
+        "x": 1000,
+        "y": 220,
+        "wires": [
+            [
+                "0777c350ef36db9f"
+            ]
+        ]
+    },
+    {
+        "id": "2d2ae41b1a8e761e",
+        "type": "link in",
+        "z": "8abdc6670b74cd27",
+        "name": "Από όργανα",
+        "links": [
+            "20cffd4cdb1b2043"
+        ],
+        "x": 55,
+        "y": 40,
+        "wires": [
+            [
+                "8e209497fae8cdbb"
+            ]
+        ]
+    },
+    {
+        "id": "8e209497fae8cdbb",
+        "type": "function",
+        "z": "8abdc6670b74cd27",
+        "name": "Αποθήκευση τιμών από άλλα Flow",
+        "func": "if (msg.topic == \"Θερμοσίφωνας\")\n    flow.set('Thermosif', msg.payload.toString());\nif (msg.topic == \"Εξωτερική Θερμοκρ.\")\n    flow.set('Temp1', msg.payload.toString());\nif (msg.topic == \"Υγρασία\")\n    flow.set('Humid', msg.payload.toString());\nif (msg.topic == \"Ηλιακή Ακτινοβολία\")\n    flow.set('Irrad', msg.payload.toString());\nif (msg.topic == \"Κατεύθυνση Ανέμου\")\n    flow.set('WindDir', msg.payload);\nif (msg.topic == \"Ένταση Ανέμου\")\n    flow.set('WindStrength', msg.payload);",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f5bf5503382f90c1",
+        "type": "debug",
+        "z": "8abdc6670b74cd27",
+        "name": "debug 3",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1740,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "34ef8615754f23dc",
+        "type": "function",
+        "z": "8abdc6670b74cd27",
+        "name": "Πάρε από το JSON το chatId",
+        "func": "let a = msg.payload.chatId;\n//flow.set('chatId', a);\n//msg.chatId = a;\nmsg.payload = a;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 340,
+        "wires": [
+            [
+                "0fdf5835728d4f87"
+            ]
+        ]
+    },
+    {
+        "id": "effacfd6a274eca8",
+        "type": "file",
+        "z": "8abdc6670b74cd27",
+        "name": "Γράψε αρχείο - πρόσθεσε",
+        "filename": "/home/user/.node-red/users.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1830,
+        "y": 380,
+        "wires": [
+            [
+                "d9c781c7d4b5573c"
+            ]
+        ]
+    },
+    {
+        "id": "00b54ca0d54b49a7",
+        "type": "function",
+        "z": "8abdc6670b74cd27",
+        "name": "Έλεγχος αν υπάρχει",
+        "func": "let pos = msg.payload.File.search(msg.payload.chatId);\nif (pos == -1)\n   {\n    msg.payload = msg.payload.chatId;\n   return msg;\n   }",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 380,
+        "wires": [
+            [
+                "f5bf5503382f90c1",
+                "effacfd6a274eca8"
+            ]
+        ]
+    },
+    {
+        "id": "8fcf1d68ba2c794c",
+        "type": "file in",
+        "z": "8abdc6670b74cd27",
+        "name": "ΝΑΙ - Διάβασε αρχείο",
+        "filename": "/home/user/.node-red/users.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 880,
+        "y": 400,
+        "wires": [
+            [
+                "161964846601450d"
+            ]
+        ]
+    },
+    {
+        "id": "c5abc26032366cc8",
+        "type": "join",
+        "z": "8abdc6670b74cd27",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1290,
+        "y": 380,
+        "wires": [
+            [
+                "00b54ca0d54b49a7",
+                "9a0542210e6a74f1"
+            ]
+        ]
+    },
+    {
+        "id": "0fdf5835728d4f87",
+        "type": "change",
+        "z": "8abdc6670b74cd27",
+        "name": "Αλλαγή σε chatId",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "chatId",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1110,
+        "y": 340,
+        "wires": [
+            [
+                "c5abc26032366cc8"
+            ]
+        ]
+    },
+    {
+        "id": "161964846601450d",
+        "type": "change",
+        "z": "8abdc6670b74cd27",
+        "name": "Αλλαγή σε File",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "File",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1120,
+        "y": 440,
+        "wires": [
+            [
+                "c5abc26032366cc8"
+            ]
+        ]
+    },
+    {
+        "id": "b83d23a1a65188b3",
+        "type": "fs-ops-access",
+        "z": "8abdc6670b74cd27",
+        "name": "Υπάρχει το αρχείο;",
+        "path": "/home/user/.node-red",
+        "pathType": "str",
+        "filename": "users.txt",
+        "filenameType": "str",
+        "read": true,
+        "write": false,
+        "throwerror": false,
+        "x": 650,
+        "y": 440,
+        "wires": [
+            [
+                "8fcf1d68ba2c794c"
+            ],
+            [
+                "188115ab7b53dd1d"
+            ]
+        ]
+    },
+    {
+        "id": "188115ab7b53dd1d",
+        "type": "function",
+        "z": "8abdc6670b74cd27",
+        "name": "ΟΧΙ - Βάλε κενό string",
+        "func": "msg.payload=\"\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 480,
+        "wires": [
+            [
+                "161964846601450d"
+            ]
+        ]
+    },
+    {
+        "id": "9b36b2432d1a08f3",
+        "type": "inject",
+        "z": "8abdc6670b74cd27",
+        "name": "Δοκιμή προσθήκης χρήστη 1",
+        "props": [
+            {
+                "p": "payload.chatId",
+                "v": "test123",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 300,
+        "y": 380,
+        "wires": [
+            [
+                "34ef8615754f23dc",
+                "b83d23a1a65188b3"
+            ]
+        ]
+    },
+    {
+        "id": "ea3f7a784602f584",
+        "type": "comment",
+        "z": "8abdc6670b74cd27",
+        "name": "/register - Πρόσθεσε το chatId του χρήστη στο αρχείο",
+        "info": "",
+        "x": 750,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "4dc68d9041e141a3",
+        "type": "comment",
+        "z": "8abdc6670b74cd27",
+        "name": "/status",
+        "info": "",
+        "x": 610,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "dd7e15718c75e724",
+        "type": "comment",
+        "z": "8abdc6670b74cd27",
+        "name": "/help",
+        "info": "",
+        "x": 830,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "9a0542210e6a74f1",
+        "type": "function",
+        "z": "8abdc6670b74cd27",
+        "name": "Έλεγχος και μήνυμα",
+        "func": "let pos = msg.payload.File.search(msg.payload.chatId);\nif (pos == -1)\n    msg.payload = \"Επιτυχής καταχώρηση.\";\nelse\n    msg.payload = \"Είστε ήδη καταχωρημένος.\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 280,
+        "wires": [
+            [
+                "74025003b5391a06"
+            ]
+        ]
+    },
+    {
+        "id": "74025003b5391a06",
+        "type": "chatbot-message",
+        "z": "8abdc6670b74cd27",
+        "name": "",
+        "message": [
+            ""
+        ],
+        "language": "none",
+        "x": 1690,
+        "y": 320,
+        "wires": [
+            [
+                "0777c350ef36db9f"
+            ]
+        ]
+    },
+    {
+        "id": "1823cabeebd2b4cc",
+        "type": "function",
+        "z": "8abdc6670b74cd27",
+        "name": "Πάρε από το JSON το chatId",
+        "func": "let a = msg.payload.chatId;\n//flow.set('chatId', a);\n//msg.chatId = a;\nmsg.payload = a;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 680,
+        "y": 600,
+        "wires": [
+            [
+                "1ed5631d1cc3c1f3"
+            ]
+        ]
+    },
+    {
+        "id": "5be9027540355f86",
+        "type": "function",
+        "z": "8abdc6670b74cd27",
+        "name": "Έλεγχος αν υπάρχει",
+        "func": "let pos = msg.payload.File.search(msg.payload.chatId);\nif (pos > -1)\n   { \n   let rs = msg.payload.chatId + \"\\n\";\n   msg.payload = msg.payload.File.replace(rs, \"\");\n   msg.payload = msg.payload.slice(0, -1);\n   return msg;\n   }",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1500,
+        "y": 640,
+        "wires": [
+            [
+                "226ea36171c653b4",
+                "725966b68a883383"
+            ]
+        ]
+    },
+    {
+        "id": "0109c6d3677ddc7e",
+        "type": "file in",
+        "z": "8abdc6670b74cd27",
+        "name": "ΝΑΙ - Διάβασε αρχείο",
+        "filename": "/home/user/.node-red/users.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 880,
+        "y": 660,
+        "wires": [
+            [
+                "44fa1e3c3d961935"
+            ]
+        ]
+    },
+    {
+        "id": "1c9f67fce2808512",
+        "type": "join",
+        "z": "8abdc6670b74cd27",
+        "name": "",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1310,
+        "y": 640,
+        "wires": [
+            [
+                "5be9027540355f86",
+                "c938076691952bf6"
+            ]
+        ]
+    },
+    {
+        "id": "1ed5631d1cc3c1f3",
+        "type": "change",
+        "z": "8abdc6670b74cd27",
+        "name": "Αλλαγή σε chatId",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "chatId",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1130,
+        "y": 600,
+        "wires": [
+            [
+                "1c9f67fce2808512"
+            ]
+        ]
+    },
+    {
+        "id": "44fa1e3c3d961935",
+        "type": "change",
+        "z": "8abdc6670b74cd27",
+        "name": "Αλλαγή σε File",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "File",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1140,
+        "y": 700,
+        "wires": [
+            [
+                "1c9f67fce2808512"
+            ]
+        ]
+    },
+    {
+        "id": "605f860a8c127abe",
+        "type": "fs-ops-access",
+        "z": "8abdc6670b74cd27",
+        "name": "Υπάρχει το αρχείο;",
+        "path": "/home/user/.node-red",
+        "pathType": "str",
+        "filename": "users.txt",
+        "filenameType": "str",
+        "read": true,
+        "write": false,
+        "throwerror": false,
+        "x": 650,
+        "y": 700,
+        "wires": [
+            [
+                "0109c6d3677ddc7e"
+            ],
+            [
+                "77a6f144fd83409e"
+            ]
+        ]
+    },
+    {
+        "id": "77a6f144fd83409e",
+        "type": "function",
+        "z": "8abdc6670b74cd27",
+        "name": "ΟΧΙ - Βάλε κενό string",
+        "func": "msg.payload=\"\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 740,
+        "wires": [
+            [
+                "44fa1e3c3d961935"
+            ]
+        ]
+    },
+    {
+        "id": "e836e47ab494b92a",
+        "type": "comment",
+        "z": "8abdc6670b74cd27",
+        "name": "/unregister - Σβήσε το chatId του χρήστη από το αρχείο",
+        "info": "",
+        "x": 760,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "226ea36171c653b4",
+        "type": "debug",
+        "z": "8abdc6670b74cd27",
+        "name": "debug 4",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1760,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "725966b68a883383",
+        "type": "file",
+        "z": "8abdc6670b74cd27",
+        "name": "Γράψε αρχείο από την αρχή",
+        "filename": "/home/user/.node-red/users.txt",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1820,
+        "y": 640,
+        "wires": [
+            [
+                "d9c781c7d4b5573c"
+            ]
+        ]
+    },
+    {
+        "id": "c938076691952bf6",
+        "type": "function",
+        "z": "8abdc6670b74cd27",
+        "name": "Έλεγχος και μήνυμα",
+        "func": "let pos = msg.payload.File.search(msg.payload.chatId);\nif (pos > -1)\n    msg.payload = \"Επιτυχής κατάργηση.\";\nelse\n    msg.payload = \"Δεν είστε καταχωρημένος.\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1460,
+        "y": 540,
+        "wires": [
+            [
+                "74025003b5391a06"
+            ]
+        ]
+    },
+    {
+        "id": "43c35566416f5e8a",
+        "type": "inject",
+        "z": "8abdc6670b74cd27",
+        "name": "Δοκιμή προσθήκης χρήστη 2",
+        "props": [
+            {
+                "p": "payload.chatId",
+                "v": "Τest456",
+                "vt": "str"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 300,
+        "y": 440,
+        "wires": [
+            [
+                "34ef8615754f23dc",
+                "b83d23a1a65188b3"
+            ]
+        ]
+    },
+    {
+        "id": "d9c781c7d4b5573c",
+        "type": "fs-ops-access",
+        "z": "8abdc6670b74cd27",
+        "name": "Υπάρχει το αρχείο;",
+        "path": "/home/user/.node-red",
+        "pathType": "str",
+        "filename": "users.txt",
+        "filenameType": "str",
+        "read": true,
+        "write": false,
+        "throwerror": false,
+        "x": 610,
+        "y": 980,
+        "wires": [
+            [
+                "ddac52ff0ab423ed"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "ddac52ff0ab423ed",
+        "type": "file in",
+        "z": "8abdc6670b74cd27",
+        "name": "ΝΑΙ - Διάβασε αρχείο",
+        "filename": "/home/user/.node-red/users.txt",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 880,
+        "y": 980,
+        "wires": [
+            [
+                "a2a604900e151bce"
+            ]
+        ]
+    },
+    {
+        "id": "5c6fc4a889af36ed",
+        "type": "inject",
+        "z": "8abdc6670b74cd27",
+        "name": "Αρχικά",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 240,
+        "y": 980,
+        "wires": [
+            [
+                "d9c781c7d4b5573c"
+            ]
+        ]
+    },
+    {
+        "id": "a2a604900e151bce",
+        "type": "function",
+        "z": "8abdc6670b74cd27",
+        "name": "Αντέγραψε σε πίνακα",
+        "func": "var ar = [];\nvar s = msg.payload;\nvar i = 0, j = 0;\nvar k = \"\";\nwhile (i < s.length)\n  {\n   if (s[i] != \"\\n\")\n       k += s[i];\n   else\n      {\n       ar[j] = k;\n       k = \"\";\n       j++;\n      }\n   i++;\n  }\nflow.set('ids', ar);\nmsg.payload = ar;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1160,
+        "y": 980,
+        "wires": [
+            [
+                "79fe596b39345a04"
+            ]
+        ]
+    },
+    {
+        "id": "79fe596b39345a04",
+        "type": "debug",
+        "z": "8abdc6670b74cd27",
+        "name": "debug 9",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1380,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "0decd1558f099671",
+        "type": "inject",
+        "z": "8abdc6670b74cd27",
+        "name": "Δοκιμή αποστολής",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "Συναγερμός123",
+        "payloadType": "str",
+        "x": 150,
+        "y": 1240,
+        "wires": [
+            [
+                "c05fff550b336f72"
+            ]
+        ]
+    },
+    {
+        "id": "c05fff550b336f72",
+        "type": "function",
+        "z": "8abdc6670b74cd27",
+        "name": "Αποθ. αρχικές τιμές",
+        "func": "flow.set('i-cnt', 0);\nflow.set('vb_msg', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 1340,
+        "wires": [
+            [
+                "1dfe6aee5104cb4b"
+            ]
+        ]
+    },
+    {
+        "id": "9ff7f819db9de2b8",
+        "type": "debug",
+        "z": "8abdc6670b74cd27",
+        "name": "debug 10",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1880,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "1dfe6aee5104cb4b",
+        "type": "function",
+        "z": "8abdc6670b74cd27",
+        "name": "Για κάθε chatId",
+        "func": "var ar = flow.get('ids');\nvar i = flow.get('i-cnt');\nmsg.topic = \"chatId\";\nif (i < ar.length)\n   {\n    msg.payload = ar[i];\n    i++;\n    flow.set('i-cnt', i);\n    return msg;\n   }\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 1340,
+        "wires": [
+            [
+                "856ee4964cd9f9b3",
+                "9462617cb40e8096"
+            ]
+        ]
+    },
+    {
+        "id": "9462617cb40e8096",
+        "type": "join",
+        "z": "8abdc6670b74cd27",
+        "name": "Συνένωση",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1210,
+        "y": 1200,
+        "wires": [
+            [
+                "46a5fe7998fdebe8"
+            ]
+        ]
+    },
+    {
+        "id": "856ee4964cd9f9b3",
+        "type": "function",
+        "z": "8abdc6670b74cd27",
+        "name": "Διάβασε το μήνυμα",
+        "func": "msg.payload = flow.get('vb_msg');\nmsg.topic = \"message\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 870,
+        "y": 1340,
+        "wires": [
+            [
+                "7def0e217c78cde5",
+                "9462617cb40e8096"
+            ]
+        ]
+    },
+    {
+        "id": "46a5fe7998fdebe8",
+        "type": "chatbot-conversation",
+        "z": "8abdc6670b74cd27",
+        "name": "",
+        "botDevelopment": "28abe9f0c01cd954",
+        "botProduction": "28abe9f0c01cd954",
+        "chatId": "",
+        "userId": "",
+        "transport": "viber",
+        "store": "",
+        "x": 1470,
+        "y": 1200,
+        "wires": [
+            [
+                "e4cb410a515dc99f"
+            ]
+        ]
+    },
+    {
+        "id": "e4cb410a515dc99f",
+        "type": "chatbot-message",
+        "z": "8abdc6670b74cd27",
+        "name": "",
+        "message": [
+            {
+                "message": ""
+            }
+        ],
+        "language": "none",
+        "x": 1690,
+        "y": 1200,
+        "wires": [
+            [
+                "9ff7f819db9de2b8",
+                "0777c350ef36db9f"
+            ]
+        ]
+    },
+    {
+        "id": "7def0e217c78cde5",
+        "type": "delay",
+        "z": "8abdc6670b74cd27",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1090,
+        "y": 1340,
+        "wires": [
+            [
+                "1dfe6aee5104cb4b"
+            ]
+        ]
+    },
+    {
+        "id": "db523d29ee9ec1cf",
+        "type": "comment",
+        "z": "8abdc6670b74cd27",
+        "name": "===== Αποστολή μηνύματος σε πολλαπλούς αποδέκτες =====",
+        "info": "",
+        "x": 470,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "803729a30779e492",
+        "type": "comment",
+        "z": "8abdc6670b74cd27",
+        "name": "===== Κατά το ξεκίνημα διάβασε αρχείο με παραλήπτες και βάλτο στον πίνακα ids =====",
+        "info": "",
+        "x": 550,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "0c7ccdb54024803c",
+        "type": "link in",
+        "z": "8abdc6670b74cd27",
+        "name": "From Viber Notice",
+        "links": [
+            "54a96c5cfe679856"
+        ],
+        "x": 55,
+        "y": 1340,
+        "wires": [
+            [
+                "c05fff550b336f72"
+            ]
+        ]
+    }
+]
