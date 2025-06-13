@@ -1,0 +1,1060 @@
+[
+    {
+        "id": "4de8b351d4436b87",
+        "type": "tab",
+        "label": "Φωτισμός - Γραμμή 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d257652fcd652bea",
+        "type": "link in",
+        "z": "4de8b351d4436b87",
+        "name": "Κατάσταση Διακόπτη 1",
+        "links": [
+            "77bc430041e28eb2"
+        ],
+        "x": 55,
+        "y": 380,
+        "wires": [
+            [
+                "edaba7ff8fbd8527"
+            ]
+        ]
+    },
+    {
+        "id": "a61eb20f965970aa",
+        "type": "mqtt in",
+        "z": "4de8b351d4436b87",
+        "name": "Κατάσταση Διακόπτη 1",
+        "topic": "EEKYP-2A/switch1_stat",
+        "qos": "2",
+        "datatype": "utf8",
+        "broker": "d8abde77.eb9ff",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 140,
+        "y": 480,
+        "wires": [
+            [
+                "8ed1a2854c97074d",
+                "b740f1c4361119e0"
+            ]
+        ]
+    },
+    {
+        "id": "8ed1a2854c97074d",
+        "type": "ui_switch",
+        "z": "4de8b351d4436b87",
+        "name": "Διακόπτης 1",
+        "label": "Χειροκίνητα",
+        "tooltip": "Χειροκίνητη αλλαγή",
+        "group": "7d7e6ca33a25f7f4",
+        "order": 1,
+        "width": "5",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "payload",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 590,
+        "y": 520,
+        "wires": [
+            [
+                "cef101abd5029091"
+            ]
+        ]
+    },
+    {
+        "id": "cef101abd5029091",
+        "type": "mqtt out",
+        "z": "4de8b351d4436b87",
+        "name": "Αποστολή mqtt",
+        "topic": "EEKYP-2A/switch1_cmd",
+        "qos": "",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "d8abde77.eb9ff",
+        "x": 1800,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "f5da59c57fb62977",
+        "type": "comment",
+        "z": "4de8b351d4436b87",
+        "name": "Retained",
+        "info": "Τα μηνύματα είναι retain ώστε όταν \nσυνδέεται ένα client να διαβάζει τις\nτελευταίες τιμές που έχουν τεθεί στο\ntopic.",
+        "x": 1820,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "edaba7ff8fbd8527",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Περιοδικός έλεγχος κατάστασης",
+        "func": "let a = msg.payload;\nlet s = \"\";\nif (a == 1)\n    s = \"on\";\nelse\n    s = \"off\";\nmsg.payload = s;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 380,
+        "wires": [
+            [
+                "8ed1a2854c97074d"
+            ]
+        ]
+    },
+    {
+        "id": "209f5ee098a435f1",
+        "type": "ui_slider",
+        "z": "4de8b351d4436b87",
+        "name": "Πότε θα ανάβει",
+        "label": "Ανάβει",
+        "tooltip": "Από αυτή την τιμή και κάτω ανάβει.",
+        "group": "7d7e6ca33a25f7f4",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "50",
+        "step": 1,
+        "className": "",
+        "x": 1340,
+        "y": 660,
+        "wires": [
+            [
+                "0d4089b2ed47a4ce",
+                "7ddd0df07fac0e26"
+            ]
+        ]
+    },
+    {
+        "id": "4d2420c6563f824e",
+        "type": "inject",
+        "z": "4de8b351d4436b87",
+        "name": "Ξεκίνημα",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 120,
+        "y": 660,
+        "wires": [
+            [
+                "cc9e9cba6d3bdeb6"
+            ]
+        ]
+    },
+    {
+        "id": "cc9e9cba6d3bdeb6",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αρχικοποίηση auto",
+        "func": "var payload = msg.payload;\n//Αν δεν έχει τεθεί η τιμή βάλε το payload που είναι false\nvar L1_auto = flow.get('L1_auto') || payload;\nmsg.payload = L1_auto;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 660,
+        "wires": [
+            [
+                "aba9662b94b3834b"
+            ]
+        ]
+    },
+    {
+        "id": "aba9662b94b3834b",
+        "type": "ui_switch",
+        "z": "4de8b351d4436b87",
+        "name": "",
+        "label": "Αυτόματα",
+        "tooltip": "Πατήστε για αυτόματη λειτουργία",
+        "group": "7d7e6ca33a25f7f4",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 500,
+        "y": 660,
+        "wires": [
+            [
+                "826404588c92a530",
+                "cd94c92cdcfc6f4b"
+            ]
+        ]
+    },
+    {
+        "id": "826404588c92a530",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αποθήκευσε τιμή auto",
+        "func": "/* Αποθηκεύει τιμή auto και μεταδίδει την ιδιότητα\nenabled στο επόμενο control σύμφωνα με την θέση\nτου προηγούμενου διακόπτη */\nmsg.enabled = false; //Αρχικά απενεργοποιημένο\nif (msg.payload == true) //Αν ήταν true\n    msg.enabled = true; //Να ενεργοποιήσει τα επόμενα controls\nflow.set('L1_auto', msg.payload);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 660,
+        "wires": [
+            [
+                "1bb4eea9a196c209",
+                "4f2d404968917e9e",
+                "25a0a66b16e314d8"
+            ]
+        ]
+    },
+    {
+        "id": "1bb4eea9a196c209",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αρχικοποίησε τιμή σκότους",
+        "func": "msg.payload = flow.get('L1_dark') || 15;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1060,
+        "y": 660,
+        "wires": [
+            [
+                "209f5ee098a435f1"
+            ]
+        ]
+    },
+    {
+        "id": "0d4089b2ed47a4ce",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αποθήκευσε τιμή σκότους",
+        "func": "var L1_dark = msg.payload;\nflow.set('L1_dark', L1_dark);",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f2d404968917e9e",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αρχικοποίησε τιμή φωτός",
+        "func": "msg.payload = flow.get('L1_Light') || 50;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 800,
+        "wires": [
+            [
+                "664459c5bcb8841c"
+            ]
+        ]
+    },
+    {
+        "id": "664459c5bcb8841c",
+        "type": "ui_slider",
+        "z": "4de8b351d4436b87",
+        "name": "Πότε θα σβήνει",
+        "label": "Σβήνει",
+        "tooltip": "Από αυτή την τιμή και πάνω σβήνει.",
+        "group": "7d7e6ca33a25f7f4",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": 0,
+        "max": "100",
+        "step": 1,
+        "className": "",
+        "x": 1340,
+        "y": 800,
+        "wires": [
+            [
+                "97909eaf8ddc0257"
+            ]
+        ]
+    },
+    {
+        "id": "97909eaf8ddc0257",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αποθήκευσε τιμή φωτός",
+        "func": "var L1_Light = msg.payload;\nflow.set('L1_Light', L1_Light);",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1650,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f2abad0b44602a40",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αυτόματο άναμα",
+        "func": "var L1_dark = flow.get('L1_dark'); //τιμή σκότους\nvar L1_auto = flow.get('L1_auto'); //Ενεργ. το auto\nvar L1_timer = flow.get('L1_timer'); //Ενεργ. το timer\n\n//Αν είναι στο αυτόματο χωρίς χρονιστή σβησίματος\n//και αν η τιμή του αισθητήρα έπεσε κάτω από το χαμηλό όριο σκότους\nif (msg.payload <= L1_dark && L1_auto === true && L1_timer === false)\n    msg.payload = \"on\"; //Άναψε τα φώτα\n//Διαφορετικά μην στέλνεις τίποτα\nelse\n    msg.payload = \"\";\n//Αν υπάρχει φορτίο μόνο τότε στείλε στο επόμενο\nif (msg.payload !== \"\")\n    return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 160,
+        "wires": [
+            [
+                "cef101abd5029091"
+            ]
+        ]
+    },
+    {
+        "id": "becaa3a03186e672",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αυτόματο σβήσιμο",
+        "func": "var L1_Light = flow.get('L1_Light'); //Τιμή για φως ημέρας από ποτενσιόμετρο\nvar L1_auto = flow.get('L1_auto'); //Ενεργοποιημένο το αυτόματο\nvar L1_timer = flow.get('L1_timer'); //Είναι ενεργοποιημένο το σβήσιμο με χρόνο\nvar L1_flag = flow.get('L1_flag');\n\n//Αν είναι στο αυτόματο χωρίς χρόνο σβησίματος\n//και αν η τιμή του αισθητήρα ξεπέρασε την τιμή ημέρας\nif (msg.payload >= L1_Light && L1_auto == true && L1_timer == false)\n    msg.payload = \"off\"; //Σβήσε\n//Διαφορετικά μην στέλνεις τίποτα\nelse\n    msg.payload = \"\";\n//Αν υπάρχει φορτίο μόνο τότε στείλε στο επόμενο\nif (msg.payload !== \"\")\n    return msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1050,
+        "y": 220,
+        "wires": [
+            [
+                "cef101abd5029091"
+            ]
+        ]
+    },
+    {
+        "id": "ef4bc85129810957",
+        "type": "comment",
+        "z": "4de8b351d4436b87",
+        "name": "Περιοδικές τιμές από αισθητήρα",
+        "info": "Συνήθως κάθε 1 λεπτό",
+        "x": 350,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "7ddd0df07fac0e26",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Τροποποίησε ελάχιστη τιμή",
+        "func": "var a = msg.payload;\n//msg.min = 100 - a;\nmsg = {\n    ui_control: {\n        min: a + 1\n    }\n}\n//msg.payload = msg.payload.min + 1;\n    return msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 720,
+        "wires": [
+            [
+                "664459c5bcb8841c"
+            ]
+        ]
+    },
+    {
+        "id": "b04d79cc1abe106b",
+        "type": "ui_switch",
+        "z": "4de8b351d4436b87",
+        "name": "En Timer",
+        "label": "Ενεργοποίηση Χρονοδιακόπτη",
+        "tooltip": "Πατήστε για ενεργοποίηση του χρονοδιακόπτη",
+        "group": "7d7e6ca33a25f7f4",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 500,
+        "y": 880,
+        "wires": [
+            [
+                "e17aef37886a6207"
+            ]
+        ]
+    },
+    {
+        "id": "cd94c92cdcfc6f4b",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αρχικοποίησε timer",
+        "func": "var L1_timer = flow.get('L1_timer') || false;\nmsg.enabled = false;\nif (msg.payload == true)\n    msg.enabled = true;\nmsg.payload = L1_timer;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 880,
+        "wires": [
+            [
+                "b04d79cc1abe106b"
+            ]
+        ]
+    },
+    {
+        "id": "e17aef37886a6207",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αποθήκευσε κατάσταση timer",
+        "func": "/* Αποθηκεύει τιμή timer enable και μεταδίδει την \nιδιότητα enabled στο επόμενο control σύμφωνα με την \nθέση του προηγούμενου διακόπτη */\nvar L1_auto = flow.get('L1_auto');\n//node.warn(L1_auto); //Debug\nflow.set('L1_timer', msg.payload);\nmsg.enabled = false;\n//Αν το timer enable είναι true και είναι σε auto\nif (msg.payload == true && L1_auto == true)\n    msg.enabled = true; //τότε να ανάψει η επιλογή χρόνου\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 880,
+        "wires": [
+            [
+                "c7d81d5be79d0ed3",
+                "c8f6f8ee5f907a74",
+                "c72e877bb3de3ad4"
+            ]
+        ]
+    },
+    {
+        "id": "41365cd3bc740b6a",
+        "type": "ui_time_scheduler",
+        "z": "4de8b351d4436b87",
+        "group": "7d7e6ca33a25f7f4",
+        "name": "Χρονοδιακόπτης",
+        "startDay": "1",
+        "refresh": "10",
+        "devices": [
+            "Χρονοδιακόπτης"
+        ],
+        "singleOff": false,
+        "onlySendChange": false,
+        "customPayload": false,
+        "eventMode": false,
+        "eventOptions": [],
+        "sendTopic": false,
+        "lat": "",
+        "lon": "",
+        "customContextStore": "",
+        "outputs": 2,
+        "order": 8,
+        "width": "6",
+        "height": "1",
+        "x": 1320,
+        "y": 1020,
+        "wires": [
+            [
+                "d6e28846238f1c80"
+            ],
+            [
+                "1a2e9b0f66c81d27"
+            ]
+        ]
+    },
+    {
+        "id": "b3e70d73a405da31",
+        "type": "inject",
+        "z": "4de8b351d4436b87",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 880,
+        "y": 1020,
+        "wires": [
+            [
+                "c7d81d5be79d0ed3"
+            ]
+        ]
+    },
+    {
+        "id": "c7d81d5be79d0ed3",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Φόρτωσε αρχικές τιμές ",
+        "func": "var L1_chron = flow.get('L1_chron') || '{\"timers\":[{\"starttime\":1748097000000,\"days\":[0,1,1,1,1,1,0],\"output\":\"0\",\"endtime\":1748115000000}],\"settings\":{\"disabledDevices\":[]}}'; \nmsg.payload = L1_chron;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1100,
+        "y": 1020,
+        "wires": [
+            [
+                "41365cd3bc740b6a"
+            ]
+        ]
+    },
+    {
+        "id": "d6e28846238f1c80",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αποθήκευσε τιμές χρόνου σβισήματος",
+        "func": "var L1_chron = msg.payload;\nflow.set('L1_chron', L1_chron);\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 1000,
+        "wires": [
+            [
+                "bf099ed41ed83083"
+            ]
+        ]
+    },
+    {
+        "id": "7aa40929d985ca9f",
+        "type": "comment",
+        "z": "4de8b351d4436b87",
+        "name": "Payload",
+        "info": "",
+        "x": 1360,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "cbf914606023c605",
+        "type": "comment",
+        "z": "4de8b351d4436b87",
+        "name": "Json τοποθέτησης τιμών χρόνου",
+        "info": "",
+        "x": 1670,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "1a2e9b0f66c81d27",
+        "type": "change",
+        "z": "4de8b351d4436b87",
+        "name": "Μετατροπή topic & payload",
+        "rules": [
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "false",
+                "fromt": "bool",
+                "to": "off",
+                "tot": "str"
+            },
+            {
+                "t": "change",
+                "p": "payload",
+                "pt": "msg",
+                "from": "true",
+                "fromt": "bool",
+                "to": "on",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "timerL1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1320,
+        "y": 920,
+        "wires": [
+            [
+                "d89b22601375cbd7"
+            ]
+        ]
+    },
+    {
+        "id": "daadfbe38a9e05e7",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αυτόματη λειτουργία χρονιστή, αισθητήρα",
+        "func": "var L1_dark = flow.get('L1_dark'); //τιμή σκότους\nvar L1_Light = flow.get('L1_Light'); //Τιμή για φως ημέρας από ποτενσιόμετρο\nvar L1_auto = flow.get('L1_auto'); //Ενεργοποιημένο το αυτόματο\nvar L1_timer = flow.get('L1_timer'); //Είναι ενεργοποιημένο το σβήσιμο με χρόνο\nvar L1_ignore = flow.get('L1_ignore')\n\nif (L1_auto === true && L1_timer === true && msg.payload.timerL1 == \"on\" \n    && L1_ignore == false && msg.payload.sensL1 <= L1_dark)\n    {\n     msg.payload = \"on\";\n     return msg;\n    }\nif (L1_auto === true && L1_timer === true && msg.payload.timerL1 == \"on\"\n    && L1_ignore == true) \n    {\n     msg.payload = \"on\";\n     return msg;\n    }\nelse if (L1_auto === true && L1_timer === true && msg.payload.timerL1 == \"on\"\n    && L1_ignore == false && msg.payload.sensL1 >= L1_Light) \n    {\n     msg.payload = \"off\";\n     return msg;\n    }\nelse if (L1_auto === true && L1_timer === true && msg.payload.timerL1 == \"off\") \n    {\n     msg.payload = \"off\";\n     return msg;\n    }",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1520,
+        "y": 520,
+        "wires": [
+            [
+                "cef101abd5029091"
+            ]
+        ]
+    },
+    {
+        "id": "d2993d680244f138",
+        "type": "change",
+        "z": "4de8b351d4436b87",
+        "name": "Μετατροπή topic",
+        "rules": [
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "sensL1",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1080,
+        "y": 380,
+        "wires": [
+            [
+                "d89b22601375cbd7"
+            ]
+        ]
+    },
+    {
+        "id": "d89b22601375cbd7",
+        "type": "join",
+        "z": "4de8b351d4436b87",
+        "name": "Ένωση μηνυμάτων",
+        "mode": "custom",
+        "build": "object",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": true,
+        "timeout": "",
+        "count": "2",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "",
+        "reduceFixup": "",
+        "x": 1330,
+        "y": 580,
+        "wires": [
+            [
+                "daadfbe38a9e05e7"
+            ]
+        ]
+    },
+    {
+        "id": "25a0a66b16e314d8",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Invert Enabled",
+        "func": "var payload = msg.payload;\nmsg.enabled = true;\nif (payload == true)\n    msg.enabled = false;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 500,
+        "y": 580,
+        "wires": [
+            [
+                "8ed1a2854c97074d"
+            ]
+        ]
+    },
+    {
+        "id": "c8f6f8ee5f907a74",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Invert Enabled",
+        "func": "var payload = msg.payload;\nmsg.enabled = true;\nif (payload == true)\n    msg.enabled = false;\nif (flow.get('L1_auto') == false)\n    msg.enabled = false;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 800,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1da3ac97f46007a8",
+        "type": "comment",
+        "z": "4de8b351d4436b87",
+        "name": "Αυτόματα μετά από 0,1sec",
+        "info": "",
+        "x": 150,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "348611d7f3060806",
+        "type": "inject",
+        "z": "4de8b351d4436b87",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 1070,
+        "y": 900,
+        "wires": [
+            [
+                "1a2e9b0f66c81d27"
+            ]
+        ]
+    },
+    {
+        "id": "53b95e28f719ced9",
+        "type": "inject",
+        "z": "4de8b351d4436b87",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "x": 1070,
+        "y": 940,
+        "wires": [
+            [
+                "1a2e9b0f66c81d27"
+            ]
+        ]
+    },
+    {
+        "id": "758d1547e1d981c9",
+        "type": "ui_template",
+        "z": "4de8b351d4436b87",
+        "group": "7d7e6ca33a25f7f4",
+        "name": "LED",
+        "order": 2,
+        "width": "1",
+        "height": "1",
+        "format": "<style>\n    .led {\n        float: right;\n        padding: 1px;\n        width: 20px;\n        height: 20px;\n        /*margin: 5px 5px 5px 5px;*/\n        margin: 5px;\n        border-radius: 50%;\n    }\n</style>\n\n<div style=\"padding-top: 3px\" title=\"Ανοίγει\">\n    <span class=\"led\" style=\"background-color: {{msg.payload}}; box-shadow: black 0 -1px 1px 0px, inset black 0 -1px 4px, {{msg.payload}} 0 3px 18px;\"></span>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 590,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b740f1c4361119e0",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Μετατροπή",
+        "func": "if (msg.payload == \"on\")\n    msg.payload = \"#fc3223\"; //\"#36e5f5\";\nelse\n    msg.payload = \"#300401\"; //\"#112b63\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 390,
+        "y": 460,
+        "wires": [
+            [
+                "758d1547e1d981c9"
+            ]
+        ]
+    },
+    {
+        "id": "ce6840bf0de9bbc3",
+        "type": "ui_switch",
+        "z": "4de8b351d4436b87",
+        "name": "Ignore LDR",
+        "label": "Αγνόησε αισθητήρα",
+        "tooltip": "Λειτουργεί μόνο με τον χρονοδιακόπτη και αγνοεί αν νύχτωσε ή ξημέρωσε",
+        "group": "7d7e6ca33a25f7f4",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 970,
+        "y": 1160,
+        "wires": [
+            [
+                "e329d9104a67d8c7"
+            ]
+        ]
+    },
+    {
+        "id": "c72e877bb3de3ad4",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αρχικοποίησε Ignore LDR",
+        "func": "var L1_ignore = flow.get('L1_ignore') || false;\n\nvar L1_auto = flow.get('L1_auto');\n\nmsg.enabled = false;\nif (msg.payload == true && L1_auto == true)\n    msg.enabled = true;\nmsg.payload = L1_ignore;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 1160,
+        "wires": [
+            [
+                "ce6840bf0de9bbc3"
+            ]
+        ]
+    },
+    {
+        "id": "e329d9104a67d8c7",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Αποθήκευσε κατάσταση Ignore LDR",
+        "func": "/* Αποθηκεύει τιμή timer enable και μεταδίδει την \nιδιότητα enabled στο επόμενο control σύμφωνα με την \nθέση του προηγούμενου διακόπτη */\nvar L1_timer = flow.get('L1_timer');\n//node.warn(L1_auto); //Debug\nflow.set('L1_ignore', msg.payload);\nmsg.enabled = false;\n//Αν το timer enable είναι true και είναι σε auto\nif (msg.payload == true && L1_timer == true)\n    msg.enabled = true; //τότε να ανάψει η επιλογή χρόνου\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1210,
+        "y": 1160,
+        "wires": [
+            [
+                "db967e8baaabc80a"
+            ]
+        ]
+    },
+    {
+        "id": "db967e8baaabc80a",
+        "type": "function",
+        "z": "4de8b351d4436b87",
+        "name": "Invert Enabled",
+        "func": "var payload = msg.payload;\nmsg.enabled = true;\nif (payload == true)\n    msg.enabled = false;\nif (flow.get('L1_auto') == false)\n    msg.enabled = false;\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1480,
+        "y": 1160,
+        "wires": [
+            [
+                "1bb4eea9a196c209",
+                "4f2d404968917e9e"
+            ]
+        ]
+    },
+    {
+        "id": "04a1ccc1fd3d565c",
+        "type": "link in",
+        "z": "4de8b351d4436b87",
+        "name": "LDR1",
+        "links": [
+            "5e852fbbc24a25cf"
+        ],
+        "x": 55,
+        "y": 220,
+        "wires": [
+            [
+                "f2abad0b44602a40",
+                "becaa3a03186e672",
+                "d2993d680244f138"
+            ]
+        ]
+    },
+    {
+        "id": "bf099ed41ed83083",
+        "type": "debug",
+        "z": "4de8b351d4436b87",
+        "name": "debug 12",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1940,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "d8abde77.eb9ff",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "compatmode": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "7d7e6ca33a25f7f4",
+        "type": "ui_group",
+        "name": "Γραμμή 1",
+        "tab": "8bc902e78fe24dd2",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8bc902e78fe24dd2",
+        "type": "ui_tab",
+        "name": "Φωτισμός",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
