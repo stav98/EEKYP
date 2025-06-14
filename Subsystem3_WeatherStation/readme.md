@@ -184,6 +184,12 @@
 ## Λογισμικό
 <p>Το λογισμικό όπως και στα άλλα υποσυστήματα είναι γραμμένο σε γλώσσα wiring (c - c++) και για τους δύο microcontrollers. Επιπλέον υπάρχει και αρκετή HTML, CSS και JavaScript (JQuery) για την υλοποίηση του web interface.</p>
 
+<table align="center">
+ <tr>
+  <td><img src="images/EEKYP3_scr3.png" width="200"></td>
+  <td><img src="images/EEKYP3_scr4.png" width="200"></td>
+  </tr>
+</table>
 
 Βίντεο δοκιμών του μετεωρολογικού σταθμού
 <p align = "center"><a href="https://youtu.be/ChMTWOliI_I" title="Παρακολούθηση video"><img src="images/snapshot.jpg" width="640"></a></p>
