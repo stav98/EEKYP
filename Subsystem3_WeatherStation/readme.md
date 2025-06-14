@@ -181,5 +181,9 @@
   </tr>
 </table>
 
-Βίντεο παρουσίασης των λειτουργιών του υποσυστήματος 3
-<p align = "center"><a href="https://youtu.be/ChMTWOliI_I" title="Παρακολούθηση video"><img src="images/screensot.jpg" width="720"></a></p>
+## Λογισμικό
+<p>Το λογισμικό όπως και στα άλλα υποσυστήματα είναι γραμμένο σε γλώσσα wiring (c - c++) και για τους δύο microcontrollers. Επιπλέον υπάρχει και αρκετή HTML, CSS και JavaScript (JQuery) για την υλοποίηση του web interface.</p>
+
+
+Βίντεο δοκιμών του μετεωρολογικού σταθμού
+<p align = "center"><a href="https://youtu.be/ChMTWOliI_I" title="Παρακολούθηση video"><img src="images/snapshot.jpg" width="640"></a></p>
