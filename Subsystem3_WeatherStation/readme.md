@@ -186,8 +186,8 @@
 
 <table align="center">
  <tr>
-  <td><img src="images/EEKYP3_scr3.png" width="300"></td>
-  <td><img src="images/EEKYP3_scr4.png" width="200"></td>
+  <td><img src="images/EEKYP3_scr3.png" height="300"></td>
+  <td><img src="images/EEKYP3_scr4.png" height="300"></td>
   </tr>
 </table>
 
