@@ -12,5 +12,5 @@
 </p>
 
 Βίντεο παρουσίασης των λειτουργιών του υποσυστήματος 3
-<p align = "center"><a href="https://youtu.be/8LZXkYaFADQ" title="Παρακολούθηση video" target="w1"><img src="https://i.ytimg.com/vi/8LZXkYaFADQ/maxresdefault.jpg" width="720"></a></p>
+<p align = "center"><a href="https://youtu.be/8LZXkYaFADQ" title="Παρακολούθηση video"><img src="https://i.ytimg.com/vi/8LZXkYaFADQ/maxresdefault.jpg" width="720"></a></p>
 
