@@ -1,5 +1,5 @@
 #define VERSION       "1.00"
-#define FOOTER_LOGO   "(c)2025 <a href=\"https://sv6gmp.blogspot.gr\" target=\"_blank\">E.K. PREVEZAS</a>"
+#define FOOTER_LOGO   "(c)2025 <a href=\"https://srv1-1sek-prevez.pre.sch.gr\" target=\"_blank\">E.K. PREVEZAS</a>"
 #define BUILTIN_LED    2
 #define DEBUG_INFO     0 //1 Enable - 0 Disable
 
