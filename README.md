@@ -5,7 +5,7 @@
 **Τίτλος έργου:** Εξοικονόμηση Ενέργειας και Υδάτινων Πόρων στο δημόσιο σχολείο<br/> 
 <a href="https://openedtech.ellak.gr/robotics2025/exikonomisi-energias-ke-idatinon-poron-sto-dimosio-scholio-e-k-prevezas/">Η παρουσίαση του έργου στο site του ΕΕΛΛΑΚ</a><br>
 
-<b>Τελευταία ενημέρωση 14-6-2025</b>
+<b>Τελευταία ενημέρωση 15-6-2025</b>
 
 Περιγραφή έργου
 ========================
