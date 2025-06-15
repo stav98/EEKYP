@@ -14,7 +14,7 @@ String processor_net(const String&);
 void saveSettings(AsyncWebServerRequest*, char*);
 static void testcon(void*);
 //--------------------- Μεταβλητές σύνδεσης στον MQTT broker ---------------------------------------------
-//const char *mqtt_server;          //Όνομα του mqtt server π.χ. sv6gmp.gq ή sfotog.gq
+//const char *mqtt_server;          //Όνομα του mqtt server
 //int mqtt_port;                    //Πόρτα π.χ. 1883
 //const char *mqttuser;             //"user"
 //const char *mqttpass;             //"123456"
