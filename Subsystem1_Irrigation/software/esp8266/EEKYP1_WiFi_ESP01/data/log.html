@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EEKYP-1 : Αρχείο καταγραφής</title>
+  <!-- Setup Working Parameters -->
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() //Όταν φορτώσει η σελίδα
+    {
+    //Αν πατήθηκε το κουμπί Erase
+    $("#EraseLog").click(function() {
+              var url = "/log"; // the script where you handle the form input.
+              var data = "Erase=yes";
+              if (confirm('Βεβαιωθείτε ότι έχετε αποθηκεύσει τα δεδομένα καταγραφής. \n Θέλετε να διαγραφεί το αρχείο καταγραφής;'))
+                 {
+                  $.ajax({
+                          type: "GET",
+                          url: url,
+                          data: data, //Serialize τα δεδομένα της φόρμας
+                          success: function(){location.reload();} //Αν έγινε επιτυχώς επαναφόρτωσε τη σελίδα
+                         });
+                 }
+              return false; //avoid to execute the actual submit of the form.
+              });
+    //Αν πατήθηκε το κουμπί Erase Out Log
+    $("#EraseLogOut").click(function() {
+              var url = "/outlog"; // the script where you handle the form input.
+              var data = "Erase=yes";
+              if (confirm('Βεβαιωθείτε ότι έχετε αποθηκεύσει τα δεδομένα καταγραφής εξόδου. \n Θέλετε να διαγραφεί το αρχείο καταγραφής;'))
+                 {
+                  $.ajax({
+                          type: "GET",
+                          url: url,
+                          data: data, //Serialize τα δεδομένα της φόρμας
+                          success: function(){location.reload();} //Αν έγινε επιτυχώς επαναφόρτωσε τη σελίδα
+                         });
+                 }
+              return false; //avoid to execute the actual submit of the form.
+              });
+    });
+  </script>
+ </head>
+
+ <body>
+  <div class="container">
+   <center>
+	   <h1>EEKYP-1</h1>
+       <h1>Αρχείο καταγραφής</h1>
+   </center>
+
+   <center>
+     <button type="button" id="EraseLog">Διαγραφή αρχείου</button>&nbsp;
+     <a href="/log?View=yes" target="_blank">Εμφάνιση αρχείου</a><br>&nbsp;
+     <a href="/log?View=save">Κατέβασμα αρχείου</a><br><br>
+     <h3>Αρχείο καταγραφής εξόδου</h3>
+     <button type="button" id="EraseLogOut">Διαγραφή αρχείου εξόδου</button>&nbsp;
+     <a href="/outlog?View=yes" target="_blank">Εμφάνιση αρχείου εξόδου</a><br>&nbsp;
+     <a href="/outlog?View=save">Κατέβασμα αρχείου εξόδου</a><br><br>
+     <h2>Γραφήματα</h2>
+     <a href="/chart?Type=irrad">Ένταση ηλιακής ακτινοβολίας</a><br>
+     <a href="/chart?Type=extemp">Εξωτερική θερμοκρασία</a><br>
+     <a href="/chart?Type=intemp">Εσωτερική θερμοκρασία</a><br>
+     <a href="/chart?Type=humidi">Σχετική υγρασία</a><br><br><br>
+     <a href="/">Επιστροφή</a><br>
+     <br><small>V %VERSION% %FOOTER%</small>
+  </center>
+  </div>
+ </body>
+</html>
