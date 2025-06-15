@@ -21,7 +21,7 @@ void setup()
  Serial.begin(9600);
  delay(200);
  #if DEBUG_INFO
- Serial.println(F("\n\nEEKYP Meteorologic Station WiFi Module (c)2025 Stavros S. Fotoglou"));
+ Serial.println(F("\n\nEEKYP Weather Station WiFi Module (c)2025 Stavros S. Fotoglou - E.K. Prevezas"));
  #endif
  //Προετοιμασία συστήματος αρχείων 256 Kbyte
  if (!LittleFS.begin()) 
