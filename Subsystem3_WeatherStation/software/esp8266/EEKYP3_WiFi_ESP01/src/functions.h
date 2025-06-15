@@ -245,15 +245,15 @@ void readSettings_net()
     {
      Serial.println(F("Failed to open file /settings_net.txt for reading. Loading Defaults ..."));
      //Βάλε αρχικές τιμές στις μεταβλητές
-     SetAP = "false"; //<--
+     SetAP = "true"; //<--
      AP_SSID = "EEKYP-3";
      AP_CHANNEL = "6"; 
      AP_ENCRYPT = "false";
      AP_KEY = ""; 
-     SetSTA = "true"; //<--
-     ST_SSID = "SV6GMP"; //"SV6GMP"; //"EK PREVEZAS";
-     ST_KEY = "!Prev21477S"; //"!Prev21477S"; //"#Pv@R06!Aa$7E"
-     IP_STATIC = "true"; //<--
+     SetSTA = "false"; //<--
+     ST_SSID = ""; //
+     ST_KEY = ""; //
+     IP_STATIC = "false"; //<--
      IP_ADDR = "192.168.42.130"; //192.168.1.100
      IP_MASK = "255.255.255.0";
      IP_GATE = "192.168.42.6"; //192.168.1.1
@@ -261,10 +261,10 @@ void readSettings_net()
      NTP_TZ = TIME_ZONE_OFFSET_HRS;
      BROW_TO = TIME_ZONE_OFFSET_HRS;
      NTP_SRV = "gr.pool.ntp.org";
-     MQTT_SRV = "iot.sekprevezas.mooo.com"; //<-- -1 81.186.147.67
+     MQTT_SRV = "xxxxx.com"; //<--
      MQTT_PORT = "1883";
-     MQTT_USER = "stav";
-     MQTT_PASS = "preveza";
+     MQTT_USER = "";
+     MQTT_PASS = "";
      MQTT_CLIENT = "EEKYP-3A";
      LOG_NAME = "admin";
      LOG_PASS = "admin";
