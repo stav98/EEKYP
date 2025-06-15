@@ -15,7 +15,7 @@ String ChartData(byte, bool);
 void saveSettings(AsyncWebServerRequest*, char*);
 static void testcon(void*);
 //--------------------- Μεταβλητές σύνδεσης στον MQTT broker ---------------------------------------------
-//const char *mqtt_server;          //Όνομα του mqtt server π.χ. sv6gmp.gq ή sfotog.gq
+//const char *mqtt_server;          //Όνομα του mqtt server 
 //int mqtt_port;                    //Πόρτα π.χ. 1883
 //const char *mqttuser;             //"user"
 //const char *mqttpass;             //"123456"
@@ -386,7 +386,6 @@ void initNetwork()
             });
 
       //Ζητήθηκε η υποσελίδα /outlog της αρχικής σελίδας με GET κάποιες παραμέτρους π.χ. /outlog?Erase=yes
-      //Εδώ αποθηκεύονται οι καταστάσεις των κουρτινών
       server.on("/outlog", HTTP_GET, [](AsyncWebServerRequest * request)
             {
              if (request->hasParam("Erase")) //Αν υπάρχει η παράμετρος
