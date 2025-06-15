@@ -21,7 +21,7 @@ void setup()
  Serial.begin(9600);
  delay(200);
  #if DEBUG_INFO
- Serial.println(F("\n\nEEKYP Irigation WiFi Module (c)2025 Stavros S. Fotoglou"));
+ Serial.println(F("\n\nEEKYP Irigation WiFi Module (c)2025 E.K. Prevezas"));
  #endif
  //Προετοιμασία συστήματος αρχείων 256 Kbyte
  if (!LittleFS.begin()) 
