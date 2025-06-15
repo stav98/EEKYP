@@ -32,7 +32,7 @@ void setup()
   Serial.begin(9600);
   cmdInit(9600);
   while (!Serial);        //Περίμενε
-  Serial.println(F("***** EEKYP - IRIGATION (c)2025 [1o EPAL PREVEZAS - EK PREVEZAS] *****"));
+  Serial.println(F("***** EEKYP - IRIGATION (c)2025 [EK PREVEZAS] *****"));
   init_thermo();  //Αρχικοποίηση θερμομέτρων 1-wire
   Serial1.begin(9600);
   //cmdInit(9600);
